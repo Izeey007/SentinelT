@@ -1,28 +1,28 @@
 # SentinelT Pitch Deck
 
-The final Robo Rumble pitch deck is stored here as:
+The current deck is stored here as:
 
 - `SentinelT_Pitch_Deck.pdf`
 
-The presentation is limited to **7 slides maximum** and uses a clean white-page theme.
+## Document Format
 
-## Final 7-Slide Structure
+- **7 pages maximum**
+- **A4 portrait: 21.0 cm x 29.7 cm**
+- white-page layout
+- single-column content structure
+- 2.4 cm visual page margins
+- professional project-ownership wording
 
-1. **SentinelT Robo Wars** - project title, designer, category and hero CAD render.
-2. **Problem & Competition Constraints** - 500 x 500 mm footprint, <5 kg mass, 2.4 GHz RC, ON/OFF and E-Stop requirements.
-3. **SentinelT Solution** - armored chassis, protected drive, serviceability and guarded active-mechanism concept.
-4. **CAD Compliance & Simulation** - 318.16 x 495.00 x 255.41 mm, 180/180 footprint frames PASS, Blender/Python audit evidence.
-5. **Electronics, Control & Safety** - 2.4 GHz RC architecture, main ON/OFF, E-Stop and signal-loss safe state.
-6. **Buildability, Mass & Cost** - 4.650 kg engineering allocation, 0.350 kg design margin and current BOM procurement status.
-7. **Individual Entrant** - Thato Glen Assegaai, roles/responsibilities and individual photo.
+## 7-Page Structure
 
-## Final Status
+1. **SentinelT** - project identity, designer and hero CAD render.
+2. **Robo Wars Design Constraints** - footprint, mass, 2.4 GHz control, ON/OFF and E-Stop requirements.
+3. **SentinelT Solution & Buildability** - chassis, drivetrain, serviceability and guarded auxiliary provision.
+4. **Mechanical CAD & Verification** - 318.16 x 495.00 x 255.41 mm and 180/180 frames PASS.
+5. **Electronics, Control & Safety** - 3S power architecture, 2.4 GHz RC, main isolation, E-Stop and safe-state logic.
+6. **Mass, Components & Cost** - 4.650 kg engineering allocation, 0.350 kg design margin and current component subtotal.
+7. **Project Owner & Responsibilities** - Thato Glen Assegaai, project-owner photo and responsibilities.
 
-- White background: **DONE**
-- Entrant photo included: **DONE**
-- CAD render included: **DONE**
-- Slide count: **7 / 7**
+## Current Cost Position
 
-## Cost Wording
-
-The currently priced candidate subtotal is **R3,622.15**, but this is not the complete implementation cost because several BOM rows remain TBD. The deck should therefore not present that subtotal as the final build cost until the BOM is fully populated.
+The current priced component subtotal is **R8,039.15**. The guarded active-mechanism motor/controller remains TBD and must be finalized before the subtotal can be presented as the final implementation total.
