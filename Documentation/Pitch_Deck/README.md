@@ -1,8 +1,12 @@
 # SentinelT Pitch Deck
 
-The Robo Rumble pitch deck is limited to **7 slides maximum**.
+The final Robo Rumble pitch deck is stored here as:
 
-## Planned / Generated 7-Slide Structure
+- `SentinelT_Pitch_Deck.pdf`
+
+The presentation is limited to **7 slides maximum** and uses a clean white-page theme.
+
+## Final 7-Slide Structure
 
 1. **SentinelT Robo Wars** - project title, designer, category and hero CAD render.
 2. **Problem & Competition Constraints** - 500 x 500 mm footprint, <5 kg mass, 2.4 GHz RC, ON/OFF and E-Stop requirements.
@@ -12,16 +16,13 @@ The Robo Rumble pitch deck is limited to **7 slides maximum**.
 6. **Buildability, Mass & Cost** - 4.650 kg engineering allocation, 0.350 kg design margin and current BOM procurement status.
 7. **Individual Entrant** - Thato Glen Assegaai, roles/responsibilities and individual photo.
 
-## Required Final PDF
+## Final Status
 
-Store the final presentation here as:
-
-`SentinelT_Pitch_Deck.pdf`
-
-## Important Outstanding Item
-
-The competition requires the Team/Individual slide to contain a **picture of the entrant**. A genuine photo of Thato Glen Assegaai must be inserted before the deck is treated as final. No placeholder image should be submitted as proof of identity/team participation.
+- White background: **DONE**
+- Entrant photo included: **DONE**
+- CAD render included: **DONE**
+- Slide count: **7 / 7**
 
 ## Cost Wording
 
-The currently priced candidate subtotal is **R3,622.15**, but this is not the complete implementation cost because several BOM rows remain TBD. The final deck should not describe that subtotal as the final build cost until the BOM is fully populated.
+The currently priced candidate subtotal is **R3,622.15**, but this is not the complete implementation cost because several BOM rows remain TBD. The deck should therefore not present that subtotal as the final build cost until the BOM is fully populated.
