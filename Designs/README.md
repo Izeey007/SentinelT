@@ -1,31 +1,27 @@
 # Designs - SentinelT Robo Wars
 
-This folder contains the physical/electronic design evidence required for the Robo Rumble elimination round.
+This folder contains the mechanical, electronic, safety and simulation design work for SentinelT.
 
 ## Mechanical Design
 
-`Mechanical_Design/`
+`Mechanical_Design/` contains:
 
-Contains:
-- final Blender CAD model;
+- the Blender CAD model;
 - front, side, top and isometric renders;
-- fabrication approach;
+- fabrication and fastening approach;
 - verified CAD dimensions and footprint results.
 
-**Verified CAD:** 318.16 mm x 495.00 mm x 255.41 mm.  
+**Verified CAD envelope:** 318.16 mm x 495.00 mm x 255.41 mm  
 **Footprint audit:** 180/180 checked frames PASS.
 
 ## Electronic Design
 
-`Electronic_Design/`
-
-Documents the planned battery, fuse, power isolation, E-Stop, RC receiver, control electronics, drive controller and auxiliary-control architecture.
+`Electronic_Design/` documents the selected 3S power architecture, 2.4 GHz RC link, drive motors, drive ESC, fuse/protection, main isolation, E-Stop control, high-current relay/contactor, power distribution and wiring plan.
 
 ## Schematics
 
-`Schematics/SentinelT_Power_and_EStop.md`
+`Schematics/SentinelT_Power_and_EStop.md` explicitly identifies:
 
-Explicitly identifies:
 - **MAIN ON/OFF SWITCH**;
 - **EMERGENCY STOP / power-disable stage**;
 - battery and fuse path;
@@ -33,12 +29,11 @@ Explicitly identifies:
 - drive and auxiliary controllers;
 - RC-loss safe-state behaviour.
 
-## Simulation / Digital Verification
+## Simulation and Digital Verification
 
-`Simulation/`
+`Simulation/` contains repeatable Blender/Python tools for:
 
-Contains repeatable Blender/Python audit scripts for:
 - 500 mm x 500 mm footprint verification;
 - engineering mass-budget reporting.
 
-The 4.650 kg mass figure is an engineering allocation rather than a measured physical mass. Final physical weighing and electrical/mechanical validation are still required before competition use.
+The 4.650 kg value is an engineering allocation rather than a measured physical mass. Final physical weighing and electrical/mechanical validation will be performed on the fabricated robot.
