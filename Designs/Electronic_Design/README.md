@@ -1,36 +1,41 @@
 # Electronic Design
 
-SentinelT's electronics are organised around safe 2.4 GHz human-operated RC control and separated power/control paths.
+SentinelT's electronics are organised around safe human-operated **2.4 GHz RC control**, a 3S battery architecture and separated power/control paths.
 
-## Proposed Functional Blocks
+## Functional Blocks
 
-- battery pack;
-- main fuse/protection;
+- 11.1 V 3S battery pack;
+- branch fuse/protection;
 - accessible main ON/OFF isolation;
-- E-Stop / actuator-power-disable stage;
+- E-Stop pushbutton and high-current power-disable relay/contactor;
 - power distribution;
 - 2.4 GHz RC receiver;
-- embedded controller / interface logic;
-- dual drive motor controller;
-- drive motors;
+- controller/interface logic;
+- dual brushed drive ESC;
+- two 12 V geared drive motors;
 - auxiliary controller for the guarded active mechanism.
 
-## Candidate Components Identified
+## Current Component Plan
 
-The BOM currently includes verified supplier data for several candidate items, including:
+The Bill of Materials currently identifies:
 
 - FlySky FS-i6X transmitter + X6B receiver (2.4 GHz);
 - HobbyWing QuicRun WP 880 dual brushed ESC;
-- 2S 5000 mAh LiPo candidate;
+- 2 x Pololu 4743 50:1 12 V 200 RPM 37D metal gearmotors;
+- BEAT 5000 mAh 11.1 V 3S LiPo with XT60;
+- 30 A branch fuse and fuse holder candidates;
+- 12 V 100 A main battery isolator candidate;
 - emergency pushbutton candidate;
-- fuse holder candidate;
-- XT60 connector candidate.
+- separate 12 V 80 A high-current relay/contactor candidate;
+- 100 A 4-way power-distribution terminal block;
+- 10 mm2 red/black silicone high-current wiring;
+- XT60 power connector set.
 
-These are **procurement candidates**, not a final electrically validated system. Final voltage/current ratings, wire gauges, fusing, motor selection and disconnect implementation must be verified as a matched system before physical operation.
+The guarded active-mechanism motor/controller remains the final unresolved BOM subsystem. All selected ratings will be verified as a matched electrical system before physical operation.
 
 ## Safety
 
-The detailed ON/OFF and E-Stop architecture is in:
+The detailed ON/OFF and E-Stop architecture is documented in:
 
 `Designs/Schematics/SentinelT_Power_and_EStop.md`
 
