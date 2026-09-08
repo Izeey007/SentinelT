@@ -1,33 +1,34 @@
 # SentinelT Bill of Materials
 
-Primary workbook: `SentinelT_Bill_of_Materials.xlsx`
+The elimination-round BOM is stored in this folder as:
 
-## Competition Fields Included
+- `SentinelT_Bill_of_Materials.xlsx`
 
-The spreadsheet contains:
+## Current Status
+
+The workbook includes the competition-required columns:
 
 - Component Name
 - Quantity
-- Cost per Unit (R)
+- Cost per Unit
 - Supplier Name
 - Supplier Stock Code
 - Direct URL / Link
-- Total Cost (R)
+- Total Cost
 
-The **FINAL TOTAL COST** row is highlighted in red, matching the elimination-round requirement.
+The final-total row is visually highlighted in red.
 
-## Procurement Status
+## Current Procurement Progress
 
-No components are currently owned. Several components are still being selected, so the workbook distinguishes between:
+The BOM now includes selected candidate data for the chassis/armor stock, drivetrain, 2.4 GHz RC system, battery, branch protection, main isolation, E-Stop components, power distribution, connectors, high-current wiring and serviceable fasteners. The selected direct-drive wheel system does not require separate drive bearings or axles.
 
-- **TBD** - not yet selected/priced;
-- **Candidate** - supplier/product data has been identified but the component is not yet physically validated as part of the complete system;
-- **Verified/Purchased** - reserved for later confirmed hardware.
+Current priced candidate subtotal: **R8,039.15**.
 
-Current supplier-verified candidate rows include the 2.4 GHz RC set, dual brushed ESC, LiPo battery, E-Stop pushbutton, fuse holder and XT60 connector.
+This is **not yet the final implementation total** because the guarded active-mechanism motor/controller remains to be selected and electrically matched. Shipping/import charges and any fabrication-service charges are also not included unless explicitly listed.
 
-The current priced-candidate subtotal is **R3,622.15**. This is **not the final implementation cost** because motors, wheels, chassis/armor, fasteners, wiring, main isolation hardware and final auxiliary hardware are still TBD.
+## Important Engineering Notes
 
-## Safety Note
-
-Supplier current/voltage ratings must be checked against the final measured load. In particular, the E-Stop pushbutton must not automatically be assumed to interrupt the full traction/auxiliary current directly; a properly rated disconnect/contactor may be required.
+- The 6 mm HDPE armor panels are cut from the same purchased sheet as the chassis stock, so the material is not double-counted.
+- The 10 mm² red/black silicone power wiring is rated by the supplier for high-current use, but final routing, termination and branch protection still require physical verification.
+- The E-Stop pushbutton is not treated as the high-current interrupt device by itself; the design uses a separate high-current relay/contactor candidate.
+- Final physical mass, actual current draw, thermal behaviour and E-Stop interruption performance must be verified on the completed robot.
