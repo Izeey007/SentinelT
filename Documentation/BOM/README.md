@@ -1,92 +1,33 @@
-# SentinelT_Robo
+# SentinelT Bill of Materials
 
-**Designer:** Thato Glen Assegaai  
-**Category:** Robo Wars – RC Combat  
-**Competition:** Robo Rumble
+Primary workbook: `SentinelT_Bill_of_Materials.xlsx`
 
-## Project Summary
+## Competition Fields Included
 
-SentinelT is a compact remotely controlled combat robot designed for the
-Robo Wars category of the Robo Rumble competition.
+The spreadsheet contains:
 
-The design combines a low-profile armored mobile chassis, protected drive
-system, sloped frontal protection, articulated upper structure, and a guarded
-active-mechanism concept.
+- Component Name
+- Quantity
+- Cost per Unit (R)
+- Supplier Name
+- Supplier Stock Code
+- Direct URL / Link
+- Total Cost (R)
 
-The robot is designed around the mandatory competition constraints including:
+The **FINAL TOTAL COST** row is highlighted in red, matching the elimination-round requirement.
 
-- Maximum footprint: 500 mm × 500 mm
-- Maximum mass: strictly below 5 kg
-- 2.4 GHz remote-control communication
-- Accessible main ON/OFF switch
-- Emergency Stop system
-- No projectiles, flames, or liquids
+## Procurement Status
 
-## Verified CAD Compliance
+No components are currently owned. Several components are still being selected, so the workbook distinguishes between:
 
-Final CAD dimensions:
+- **TBD** - not yet selected/priced;
+- **Candidate** - supplier/product data has been identified but the component is not yet physically validated as part of the complete system;
+- **Verified/Purchased** - reserved for later confirmed hardware.
 
-- X width: 318.16 mm
-- Y length: 495.00 mm
-- Z height: 255.41 mm
+Current supplier-verified candidate rows include the 2.4 GHz RC set, dual brushed ESC, LiPo battery, E-Stop pushbutton, fuse holder and XT60 connector.
 
-Footprint requirement:
+The current priced-candidate subtotal is **R3,622.15**. This is **not the final implementation cost** because motors, wheels, chassis/armor, fasteners, wiring, main isolation hardware and final auxiliary hardware are still TBD.
 
-500 mm × 500 mm maximum
+## Safety Note
 
-CAD audit result:
-
-**PASS**
-
-Animation/compliance frames checked:
-
-**180 / 180 PASS**
-
-## Engineering Mass Budget
-
-Maximum permitted mass:
-
-5.000 kg
-
-Planned engineering mass:
-
-4.650 kg
-
-Remaining design margin:
-
-0.350 kg
-
-**Engineering mass-budget status: PASS**
-
-> The 4.650 kg value is a design estimate. Final physical mass must be
-> verified using a calibrated weighing scale before competition.
-
-## Control Method
-
-SentinelT is manually controlled using a 2.4 GHz RC communication system,
-in accordance with Robo Wars regulations.
-
-## Safety
-
-The electrical architecture includes:
-
-- Main ON/OFF power isolation
-- Emergency Stop mechanism
-- Power isolation for the active mechanism
-- Clearly labelled shutdown controls
-
-Detailed circuit diagrams and E-Stop annotations are provided under
-`Designs/Schematics/`.
-
-## Repository Structure
-
-### Source_Code
-Firmware, RC-control logic, programming architecture and flowcharts.
-
-### Designs
-Mechanical CAD, renders, fabrication information, electronic design,
-schematics, E-Stop integration and simulation evidence.
-
-### Documentation
-Pitch deck, Bill of Materials, holistic technical report and FQ&A
-attendance records.
+Supplier current/voltage ratings must be checked against the final measured load. In particular, the E-Stop pushbutton must not automatically be assumed to interrupt the full traction/auxiliary current directly; a properly rated disconnect/contactor may be required.
