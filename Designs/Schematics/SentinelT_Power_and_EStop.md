@@ -4,6 +4,10 @@
 **Category:** Robo Wars - RC Combat  
 **Designer:** Thato Glen Assegaai
 
+## Clear Vector Schematic
+
+![SentinelT Power and E-Stop Architecture](./SentinelT_Power_Architecture.svg)
+
 ## Safety Objective
 
 I designed SentinelT with two separate operator-accessible safety functions:
