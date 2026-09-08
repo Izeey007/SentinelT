@@ -1,21 +1,29 @@
-# Documentation - Robo Rumble Elimination Round
+# SentinelT Documentation
 
-**Designer:** Thato Glen Assegaai  
+**Project owner and designer:** Thato Glen Assegaai  
 **Category:** Robo Wars - RC Combat
 
-This folder contains the documentation package required for the Robo Rumble elimination round.
+This folder contains the formal engineering documentation for SentinelT.
 
-## Required Deliverables
+## Pitch Deck
 
-### Pitch Deck
-Location: `Pitch_Deck/`
+Location: `Pitch_Deck/SentinelT_Pitch_Deck.pdf`
 
-Maximum 7 slides covering the problem, SentinelT solution, buildability/marketability, implementation cost, technical highlights and individual role.
+The deck is limited to **7 pages**, uses a white A4 portrait layout and covers:
 
-### Bill of Materials
+- SentinelT project identity and ownership;
+- Robo Wars design constraints;
+- solution and buildability;
+- CAD and digital verification;
+- electronic control and safety;
+- mass and cost;
+- individual responsibilities with project-owner photo.
+
+## Bill of Materials
+
 Location: `BOM/SentinelT_Bill_of_Materials.xlsx`
 
-The workbook contains the required columns:
+The workbook records:
 
 - component name;
 - quantity;
@@ -23,29 +31,31 @@ The workbook contains the required columns:
 - supplier name;
 - supplier stock code;
 - direct purchase URL;
-- total cost.
+- total line cost.
 
-The final-total row is visually highlighted in red. Current procurement data is partial because no parts are owned and several final components are still being selected.
+The final-total row is visually highlighted in red. The current priced component subtotal is **R8,039.15**; the guarded active-mechanism motor/controller remains TBD until its mass and electrical compatibility are finalized.
 
-### Holistic Build Document
-Location: `Holistic_Build_Document/`
+## Holistic Build Document
 
-The build document covers competition constraints, solution overview, mechanical design, electronic design, ON/OFF and E-Stop safety, programming architecture, CAD verification, mass budget, simulation and limitations.
+Location: `Holistic_Build_Document/SentinelT_Holistic_Build_Document.pdf`
 
-### FQ&A Attendance
+The report is A4 portrait, single-column, white-page format and covers project ownership, Robo Wars constraints, mechanical design, electronic design, ON/OFF and E-Stop safety, 2.4 GHz control, programming framework, CAD verification, mass budget, BOM summary, buildability and current development status.
+
+## Facilitator Q&A Attendance
+
 - `FQA_Attendance_Log.md`
 - `FQA_Proof/`
 
-Only genuine attendance entries and screenshots should be added.
+Only genuine attendance entries and evidence are recorded.
 
 ## Verified Engineering Summary
 
 - CAD footprint: **318.16 mm x 495.00 mm**
 - CAD height: **255.41 mm**
-- Footprint frames checked: **180**
+- Frames checked: **180**
 - Failed frames: **0**
 - Footprint status: **PASS**
 - Engineering mass budget: **4.650 kg**
-- Design margin to 5 kg: **0.350 kg**
+- Design margin: **0.350 kg**
 
-The mass figure is an engineering estimate and must be physically verified with a calibrated scale after fabrication.
+The mass figure is an engineering allocation and will be physically verified on the completed robot.
