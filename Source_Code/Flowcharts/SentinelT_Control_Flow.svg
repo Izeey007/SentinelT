@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="1200" viewBox="0 0 900 1200">
+  <defs>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="#222"/></marker>
+    <marker id="redArrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="#991b1b"/></marker>
+  </defs>
+  <style>
+    text { font-family: Arial, sans-serif; fill:#202020; }
+    .title { font-size:30px; font-weight:700; }
+    .box { fill:#fafafa; stroke:#222; stroke-width:2; }
+    .safe { fill:#fff5f5; stroke:#991b1b; stroke-width:2.5; }
+    .main { stroke:#222; stroke-width:2.5; fill:none; marker-end:url(#arrow); }
+    .branch { stroke:#991b1b; stroke-width:2.5; fill:none; marker-end:url(#redArrow); }
+    .bold { font-weight:700; }
+  </style>
+  <rect width="900" height="1200" fill="white"/>
+  <text x="35" y="55" class="title">SentinelT 2.4 GHz RC Control Flow</text>
+  <text x="35" y="82" font-size="14" fill="#666">Safe-state logic for human-operated Robo Wars control</text>
+
+  <rect x="300" y="110" rx="10" width="520" height="75" class="box"/>
+  <text x="560" y="155" text-anchor="middle" font-size="20" class="bold">POWER ON</text>
+
+  <rect x="300" y="230" rx="10" width="520" height="86" class="box"/>
+  <text x="560" y="266" text-anchor="middle" font-size="17" class="bold">Initialize controller and force</text>
+  <text x="560" y="291" text-anchor="middle" font-size="17" class="bold">drive + auxiliary outputs OFF</text>
+
+  <rect x="300" y="360" rx="10" width="520" height="86" class="box"/>
+  <text x="560" y="396" text-anchor="middle" font-size="17" class="bold">Check hardware E-Stop /</text>
+  <text x="560" y="421" text-anchor="middle" font-size="17" class="bold">power-disable condition</text>
+
+  <rect x="300" y="490" rx="10" width="520" height="86" class="box"/>
+  <text x="560" y="540" text-anchor="middle" font-size="17" class="bold">Read and validate 2.4 GHz RC signal</text>
+
+  <rect x="300" y="620" rx="10" width="520" height="86" class="box"/>
+  <text x="560" y="656" text-anchor="middle" font-size="16" class="bold">Read throttle, steering and</text>
+  <text x="560" y="680" text-anchor="middle" font-size="16" class="bold">auxiliary-enable command</text>
+
+  <rect x="300" y="750" rx="10" width="520" height="86" class="box"/>
+  <text x="560" y="786" text-anchor="middle" font-size="16" class="bold">Apply differential-drive command</text>
+  <text x="560" y="810" text-anchor="middle" font-size="16" class="bold">and auxiliary control</text>
+
+  <rect x="300" y="880" rx="10" width="520" height="86" class="box"/>
+  <text x="560" y="916" text-anchor="middle" font-size="16" class="bold">Continue only while E-Stop is safe</text>
+  <text x="560" y="940" text-anchor="middle" font-size="16" class="bold">and RC signal remains valid</text>
+
+  <path d="M560 185 L560 225" class="main"/>
+  <path d="M560 316 L560 355" class="main"/>
+  <path d="M560 446 L560 485" class="main"/>
+  <path d="M560 576 L560 615" class="main"/>
+  <path d="M560 706 L560 745" class="main"/>
+  <path d="M560 836 L560 875" class="main"/>
+
+  <rect x="35" y="370" rx="10" width="220" height="260" class="safe"/>
+  <text x="145" y="415" text-anchor="middle" font-size="20" class="bold" fill="#991b1b">SAFE DISABLED</text>
+  <text x="145" y="450" text-anchor="middle" font-size="16" class="bold">Drive OFF</text>
+  <text x="145" y="480" text-anchor="middle" font-size="16" class="bold">Auxiliary OFF</text>
+  <text x="145" y="530" text-anchor="middle" font-size="13">Remain disabled.</text>
+  <text x="145" y="555" text-anchor="middle" font-size="13">Re-check E-Stop and</text>
+  <text x="145" y="580" text-anchor="middle" font-size="13">RC signal before motion.</text>
+
+  <path d="M300 403 L255 403" class="branch"/>
+  <text x="262" y="390" text-anchor="end" font-size="12" fill="#991b1b">E-STOP ACTIVE</text>
+  <path d="M300 533 L255 533" class="branch"/>
+  <text x="262" y="520" text-anchor="end" font-size="12" fill="#991b1b">RC INVALID / LOST</text>
+
+  <rect x="100" y="1025" rx="10" width="700" height="110" fill="#fafafa" stroke="#bbb"/>
+  <text x="450" y="1065" text-anchor="middle" font-size="14">Motion is never the default state. Startup, reset, E-Stop activation,</text>
+  <text x="450" y="1090" text-anchor="middle" font-size="14">RC signal loss and invalid commands return SentinelT to SAFE DISABLED.</text>
+</svg>
