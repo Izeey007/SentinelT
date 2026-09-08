@@ -57,13 +57,13 @@ This checklist maps the repository against the 120-point elimination rubric.
 ## 4. Documentation - 30 Points
 
 ### Holistic Build Document - 10
-- [x] Full Markdown source report
+- [x] Full technical report
 - [x] Mechanical section
 - [x] Electronic section
 - [x] Programming/framework section
 - [x] Safety/E-Stop section
 - [x] Simulation and limitations
-- [ ] Final formatted PDF must be uploaded as `Documentation/Holistic_Build_Document/SentinelT_Holistic_Build_Document.pdf`
+- [x] Final formatted PDF uploaded as `Documentation/Holistic_Build_Document/SentinelT_Holistic_Build_Document.pdf`
 
 ### Bill of Materials - 10
 - [x] Required XLSX exists
@@ -74,14 +74,15 @@ This checklist maps the repository against the 120-point elimination rubric.
 - [ ] All remaining TBD rows must be priced/selected before claiming a final implementation total
 
 ### Pitch Deck - 10
-- [x] 7-slide structure defined
-- [x] Problem/constraints
-- [x] Solution/buildability
-- [x] CAD/simulation evidence
-- [x] Cost/mass section
-- [x] Individual-role slide
-- [ ] Final PDF must be uploaded as `Documentation/Pitch_Deck/SentinelT_Pitch_Deck.pdf`
-- [ ] Genuine individual photo must replace the photo placeholder before final submission
+- [x] Final PDF uploaded as `Documentation/Pitch_Deck/SentinelT_Pitch_Deck.pdf`
+- [x] 7-slide maximum respected
+- [x] Clean white-page presentation theme
+- [x] Problem/constraints covered
+- [x] Solution/buildability covered
+- [x] CAD/simulation evidence included
+- [x] Cost/mass section included
+- [x] Individual-role slide included
+- [x] Genuine photo of Thato Glen Assegaai included
 
 ## 5. Bonus - 20 Points
 
@@ -96,11 +97,12 @@ This checklist maps the repository against the 120-point elimination rubric.
 - [x] Full animation-range footprint verification
 - [x] Safety architecture and documented limitations
 
-## Critical Outstanding Items
+## Remaining Before Submission
 
-1. Upload the final **Pitch Deck PDF**.
-2. Upload the final **Holistic Build Document PDF**.
-3. Insert a genuine photo of Thato Glen Assegaai on the pitch-deck individual slide.
-4. Finish all remaining BOM supplier/cost rows before presenting a final implementation cost.
-5. Add FQ&A proof only if genuine attendance evidence exists.
-6. Physical mass, E-Stop operation and electrical load ratings remain pre-competition physical-verification tasks.
+1. Complete as many remaining BOM supplier/cost rows as possible. Do not call the current subtotal the final implementation cost until every required row is populated.
+2. Add FQ&A attendance screenshots only if genuine proof exists.
+3. Final physical mass, E-Stop operation, electrical load ratings and drivetrain testing remain physical-prototype verification tasks and should not be misrepresented as completed.
+
+## Current Repository Status
+
+The elimination-round repository structure, CAD, renders, source-code framework, simulation evidence, safety architecture, pitch-deck PDF and holistic-build PDF are all present. The main documentation weakness remaining is incomplete BOM procurement detail; FQ&A points depend on genuine attendance evidence.
