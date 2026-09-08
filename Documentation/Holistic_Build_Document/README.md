@@ -1,8 +1,8 @@
 # Holistic Build Document
 
-The full source report is available as:
+The final Robo Rumble holistic build report is stored in this folder as:
 
-- `SentinelT_Holistic_Build_Document.md`
+- `SentinelT_Holistic_Build_Document.pdf`
 
 It covers the required Robo Wars technical sections:
 
@@ -28,10 +28,4 @@ It covers the required Robo Wars technical sections:
 - Engineering mass budget: **4.650 kg**
 - Remaining design margin: **0.350 kg**
 
-## PDF Deliverable
-
-The competition submission requires the final written build document. A formatted PDF version should be stored in this folder as:
-
-`SentinelT_Holistic_Build_Document.pdf`
-
-The report must continue to distinguish digital/design estimates from measurements that require the completed physical robot.
+The report distinguishes digital/design estimates from measurements that still require the completed physical robot.
