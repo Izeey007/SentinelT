@@ -1,31 +1,30 @@
-# SentinelT Robo Wars Combat Robot
+# SentinelT - Robo Wars RC Combat Robot
 
-**Designer:** Thato Glen Assegaai  
-**Category:** Robo Wars - RC Combat  
-**Competition:** Robo Rumble 2026 - Elimination Round
+**Project owner and designer:** Thato Glen Assegaai  
+**Category:** Robo Wars - RC Combat
 
-## Project Summary
+## Project Overview
 
-SentinelT is a compact remotely controlled combat-robot CAD concept developed for the Robo Wars category. The design combines an armored mobile chassis, protected drive layout, sloped external protection, articulated upper structure, serviceable covers, 2.4 GHz RC control architecture, and a guarded active-mechanism provision.
+SentinelT is my independently designed and developed RC combat robot for Robo Wars. I developed the mechanical concept, Blender CAD model, dimensional-verification scripts, 2.4 GHz control framework, power and safety architecture, component plan, and technical documentation contained in this repository.
 
-The repository is organised specifically around the Robo Rumble elimination rubric: source code and flowcharts, mechanical/electronic designs and safety schematics, plus the required documentation package.
+The design combines a compact armored chassis, protected drive layout, sloped external protection, serviceable body panels, an articulated upper structure, human-operated 2.4 GHz RC control, and a guarded active-mechanism provision.
 
-## Competition Compliance
+## Robo Wars Design Requirements
 
 | Requirement | SentinelT Status |
 |---|---|
-| Maximum footprint | **PASS** - 318.16 mm x 495.00 mm |
-| CAD height | 255.41 mm |
-| Footprint audit | **180/180 frames PASS** |
-| Mass limit | Strictly below 5.000 kg |
+| Maximum footprint | **PASS - 318.16 mm x 495.00 mm** |
+| CAD height | **255.41 mm** |
+| Footprint verification | **180/180 frames PASS** |
+| Mass limit | Strictly below **5.000 kg** |
 | Engineering mass budget | **4.650 kg** |
-| Mass design margin | **0.350 kg** |
+| Design margin | **0.350 kg** |
 | Control | Human-operated **2.4 GHz RC** |
-| Main ON/OFF | Included in safety architecture |
+| Main ON/OFF | Included in the power-isolation architecture |
 | Emergency Stop | Included and explicitly documented |
 | Projectiles / flames / liquids | Not used |
 
-> **Mass note:** 4.650 kg is an engineering design allocation, not a measured physical mass. The completed robot must be weighed on a calibrated scale before competition.
+> **Mass note:** 4.650 kg is an engineering design allocation, not a measured physical mass. The completed physical robot must be weighed on a calibrated scale before operational use.
 
 ## Repository Map
 
@@ -43,36 +42,48 @@ SentinelT/
 |  |- Electronic_Design/
 |  |- Schematics/
 |  `- Simulation/
-`- Documentation/
-   |- Pitch_Deck/
-   |- BOM/
-   |- Holistic_Build_Document/
-   |- FQA_Attendance_Log.md
-   `- FQA_Proof/
+|- Documentation/
+|  |- Pitch_Deck/
+|  |- BOM/
+|  |- Holistic_Build_Document/
+|  |- FQA_Attendance_Log.md
+|  `- FQA_Proof/
+`- PROJECT_COMPLETENESS_CHECKLIST.md
 ```
 
-## Mechanical Evidence
+## Mechanical Design Evidence
 
-The final Blender CAD model is stored in `Designs/Mechanical_Design/CAD/` and the front, side, top and isometric renders are stored in `Designs/Mechanical_Design/Renders/`.
+The Blender CAD model is stored in `Designs/Mechanical_Design/CAD/`. Front, side, top and isometric renders are stored in `Designs/Mechanical_Design/Renders/`.
 
-Automated Blender/Python dimensional auditing was used during development. The final compliant model measures **318.16 mm x 495.00 mm x 255.41 mm**, with **0 failed frames out of 180 checked**.
+I used Blender/Python dimensional auditing throughout development. The current verified CAD envelope is **318.16 mm x 495.00 mm x 255.41 mm**, with **0 failed frames out of 180 checked**.
 
-## Control & Safety
+## Control and Safety
 
-SentinelT is designed for human-operated 2.4 GHz RC control. The safety architecture includes:
+SentinelT uses human-operated 2.4 GHz RC control. The safety architecture includes:
 
 - accessible main ON/OFF isolation;
-- Emergency Stop (E-Stop);
-- fail-safe actuator disable on invalid/lost RC signal;
-- safe startup state;
-- explicit isolation of drive and auxiliary actuation.
+- Emergency Stop (E-Stop) power-disable architecture;
+- safe-state actuator disable on invalid or lost RC signal;
+- disabled outputs during controller startup/reset;
+- separate drive and auxiliary control paths.
 
-See `Designs/Schematics/SentinelT_Power_and_EStop.md` for the annotated architecture.
+The annotated power and E-Stop architecture is documented in `Designs/Schematics/SentinelT_Power_and_EStop.md`.
 
 ## Documentation
 
-The documentation folder contains the Bill of Materials, holistic build report source/final document, pitch-deck source/final PDF, and FQ&A attendance evidence structure.
+The `Documentation/` folder contains:
 
-## Development Status
+- the 7-page A4 portrait pitch deck PDF;
+- the Bill of Materials spreadsheet;
+- the A4 portrait holistic build report;
+- the Facilitator Q&A attendance-log structure and proof folder.
 
-**CAD and elimination-round documentation stage.** Final component ratings, fabricated mass, electrical load measurements, E-Stop hardware response, drivetrain performance and arena testing must still be physically verified before competition use.
+## Project Status
+
+The external CAD geometry, dimensional simulation, control framework, safety architecture, current component plan and technical documentation are complete as a digital engineering package. The next CAD revision will add simplified internal component models, power wiring, the RC transmitter model, a cutaway view and an exploded internal-layout view.
+
+Physical fabrication and testing remain separate implementation stages. Measured physical mass, actual current draw, thermal behaviour, drivetrain performance and E-Stop interruption performance will be verified only on the completed hardware.
+
+## Ownership Statement
+
+SentinelT is independently designed and developed by **Thato Glen Assegaai**. Third-party commercial components are identified by manufacturer and supplier in the Bill of Materials; the SentinelT system design, CAD work, integration architecture, control framework and documentation are presented as my project work.
