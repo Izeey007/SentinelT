@@ -1,6 +1,10 @@
 # SentinelT Control Flowcharts
 
-## Main Operating Flow
+The primary control-flow diagram is available as a clear, scalable vector graphic:
+
+![SentinelT 2.4 GHz RC Control Flow](./SentinelT_Control_Flow.svg)
+
+## Main Operating Logic
 
 ```mermaid
 flowchart TD
