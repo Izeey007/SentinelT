@@ -3,16 +3,20 @@
 **Individual Name:** Thato Glen Assegaai  
 **Category:** Robo Wars
 
+*Instructions: To qualify for the FQ&A bonus, log only sessions actually attended and include a direct relative link to a screenshot proving attendance. Screenshots must be saved in `FQA_Proof/`.*
+
 ## Attendance Log
 
-| Session Date | Time | Facilitator | Key Takeaway / Question | Proof |
-|---|---|---|---|---|
-| TODO | TODO | TODO | TODO | TODO |
+| Session Date | Time (Start-End) | Facilitator Name/Username | Our Key Takeaway / Question Asked | Proof of Attendance (Screenshot) |
+| :--- | :--- | :--- | :--- | :--- |
+| *No verified attendance entry supplied yet* | - | - | - | - |
+
+---
 
 ## Screenshot Directory
 
-Supporting evidence must be stored in:
+All screenshots referenced above must be stored in:
 
-`FQA_Proof/`
+`Documentation/FQA_Proof/`
 
-Only genuine attendance evidence will be included.
+Do not add a session or screenshot unless it is genuine attendance evidence.
