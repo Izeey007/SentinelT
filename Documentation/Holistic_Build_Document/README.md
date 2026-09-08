@@ -1,23 +1,36 @@
-# Holistic Build Document
+# SentinelT Holistic Build Document
 
-The final Robo Rumble holistic build report is stored in this folder as:
+The current report is stored in this folder as:
 
 - `SentinelT_Holistic_Build_Document.pdf`
 
-It covers the required Robo Wars technical sections:
+## Document Format
 
-1. competition constraints and problem statement;
-2. SentinelT solution overview;
-3. mechanical design and fabrication approach;
-4. verified CAD footprint and simulation evidence;
-5. 4.650 kg engineering mass allocation;
-6. electronic architecture;
-7. mandatory ON/OFF and E-Stop integration;
-8. 2.4 GHz RC control;
-9. programming framework and safe-state logic;
-10. BOM summary;
-11. serviceability, limitations and next-stage physical verification;
-12. individual role and responsibilities.
+- **A4 portrait: 21.0 cm x 29.7 cm**
+- white-page layout
+- single-column section layout
+- margins: **2.4 cm top, bottom, left and right**
+- paragraph spacing: **0 pt before, 8 pt after**
+- body left indent: **0.64 cm**
+- body right indent: **0 cm**
+
+## Technical Coverage
+
+The report covers:
+
+1. project ownership and overview;
+2. Robo Wars design constraints;
+3. mechanical design and fabrication;
+4. electronic design and selected hardware;
+5. main ON/OFF and E-Stop safety architecture;
+6. 2.4 GHz RC control;
+7. programming framework and safe-state logic;
+8. simulation and digital verification;
+9. 4.650 kg engineering mass allocation;
+10. Bill of Materials and cost position;
+11. buildability and serviceability;
+12. current development status;
+13. project ownership and responsibilities.
 
 ## Verified Design Evidence
 
@@ -28,4 +41,4 @@ It covers the required Robo Wars technical sections:
 - Engineering mass budget: **4.650 kg**
 - Remaining design margin: **0.350 kg**
 
-The report distinguishes digital/design estimates from measurements that still require the completed physical robot.
+The report clearly separates digital engineering results from measurements that require the completed physical robot.
