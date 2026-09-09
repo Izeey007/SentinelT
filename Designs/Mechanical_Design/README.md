@@ -5,10 +5,10 @@ SentinelT uses a compact armored chassis with protected drive areas, sloped exte
 ## CAD Assets
 
 - `CAD/SentinelT_Rob.blend` - canonical verified Blender model.
-- `Renders/01_SentinelT_FRONT_FINAL.png`
-- `Renders/02_SentinelT_SIDE_FINAL.png`
-- `Renders/03_SentinelT_TOP_FINAL.png`
-- `Renders/04_SentinelT_ISOMETRIC_FINAL.png`
+- `Renders/01_SentinelT_FRONT.png`
+- `Renders/02_SentinelT_SIDE.png`
+- `Renders/03_SentinelT_TOP.png`
+- `Renders/04_SentinelT_ISOMETRIC.png`
 - `Renders/SentinelT_Internal_Layout.jpg` - internal electronics/drivetrain packaging layout.
 - `Renders/SentinelT_Exploded_Layout.jpg` - labelled component-layout view.
 - `Renders/SentinelT_Remote.jpg` - SentinelT with the 2.4 GHz transmitter concept.
