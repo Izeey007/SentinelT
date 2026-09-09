@@ -1,11 +1,11 @@
-- Source Code
+# Folder A - Source Code
 
 **Project Developer:** TG Assegaai  
 **Build:** SentinelT Robo Wars RC Combat Robot
 
 ## Purpose
 
-This folder contains the programming framework required to operate SentinelT. The code is written specifically for a human-operated Robo Wars robot using a **2.4 GHz RC link**. It is not autonomous control code.
+This folder contains the programming scripts, firmware framework, programming method and control-flow evidence required to operate and explain SentinelT. The code is written specifically for a human-operated Robo Wars robot using a **2.4 GHz RC link**. It is not autonomous control code.
 
 ## Programming Method
 
@@ -51,15 +51,13 @@ When the controller starts or resets, all actuator commands are forced OFF and t
 
 ### 2. Hardware E-Stop Check
 
-The software checks the E-Stop status input before applying commands. The physical E-Stop itself is designed to remove actuator power independently through the high-current isolation stage documented under `Designs/Schematics/`.
+The software checks the E-Stop status input before applying commands. The physical E-Stop itself is designed to remove actuator power independently through the high-current isolation stage documented under `B_Designs/Schematics/`.
 
 ### 3. RC Signal Validation
 
 The receiver command must be valid before SentinelT can enter `RC_READY`. The control framework uses a **250 ms RC validity timeout**; invalid or stale input returns the robot to `SAFE_DISABLED`.
 
 ### 4. Differential Drive
-
-The control logic converts throttle and steering into left/right commands:
 
 ```text
 left  = throttle + steering
@@ -70,22 +68,23 @@ Both outputs are constrained to the normalized command range before conversion t
 
 ### 5. Auxiliary Control
 
-The auxiliary/active-mechanism command defaults OFF. It only becomes enabled when a valid operator command is present and the safety state allows operation.
+The auxiliary/active-mechanism command defaults OFF. It only becomes enabled when a valid operator command is present and the safety state permits operation.
 
 ## Folder Contents
 
 ```text
-Source_Code/
+A_Source_Code/
 ├── README.md
 ├── Firmware/
 │   └── SentinelT_RoboWars_Control_Skeleton.ino
 └── Flowcharts/
-    └── SentinelT_Control_Flow.svg
+    ├── SentinelT_Control_Flow.svg
+    └── SentinelT_Control_Flow.png
 ```
 
-### `Firmware/SentinelT_RoboWars_Control_Skeleton.ino`
+### Firmware
 
-Contains the embedded control/safety framework, including:
+`Firmware/SentinelT_RoboWars_Control_Skeleton.ino` contains:
 
 - robot operating-state enumeration;
 - RC-command data structure;
@@ -98,15 +97,15 @@ Contains the embedded control/safety framework, including:
 - actuator-disable function;
 - clear comments identifying hardware implementation parameters.
 
-### `Flowcharts/SentinelT_Control_Flow.svg`
+### Flowcharts
 
-Shows the complete command flow from POWER ON through initialization, E-Stop validation, RC validation, operator command processing, differential drive and the SAFE_DISABLED fallback state.
+`Flowcharts/SentinelT_Control_Flow.svg` is the vector control-flow source. `Flowcharts/SentinelT_Control_Flow.png` is the high-resolution raster copy for quick GitHub viewing. The diagram shows POWER ON, initialization, E-Stop validation, RC validation, operator command processing, differential drive and the `SAFE_DISABLED` fallback path.
 
 ## Hardware Implementation Parameters
 
-The following values cannot be truthfully locked before the selected physical hardware is wired and bench-tested, so they are intentionally treated as implementation parameters:
+The following values cannot be truthfully locked before the selected physical hardware is wired and bench-tested, so they remain explicit implementation parameters:
 
-- exact receiver protocol/channel mapping;
+- exact receiver protocol and channel mapping;
 - microcontroller pin assignments;
 - ESC neutral/end-point calibration;
 - final actuator output scaling;
@@ -114,4 +113,4 @@ The following values cannot be truthfully locked before the selected physical ha
 - measured RC failsafe behavior;
 - measured motor-current and thermal limits.
 
-These items will be verified after hardware implementation. Their absence from the current digital package is not represented as completed physical testing.
+These items will be verified after hardware implementation. They are not represented as completed physical tests in the current digital submission.
