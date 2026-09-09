@@ -11,11 +11,7 @@ This folder contains the physical and electronic blueprints for SentinelT: mecha
 
 Location: `Mechanical_Design/`
 
-The canonical Blender model is:
-
-`Mechanical_Design/CAD/SentinelT_Rob.blend`
-
-The current verified CAD envelope is **318.16 mm x 495.00 mm x 405.99 mm**. The footprint audit checks **204 physical mesh objects** across frames **1-180**, with **0 failed frames** and a result of **PASS - 180/180**.
+The final local Blender model is named `SentinelT_Rob.blend`. The current verified CAD envelope is **318.16 mm x 495.00 mm x 405.99 mm**. The footprint audit checks **204 physical mesh objects** across frames **1-180**, with **0 failed frames** and a result of **PASS - 180/180**.
 
 ### Fabrication Approach
 
@@ -34,17 +30,15 @@ The current verified CAD envelope is **318.16 mm x 495.00 mm x 405.99 mm**. The 
 - `02_SentinelT_SIDE.png`
 - `03_SentinelT_TOP.png`
 - `04_SentinelT_ISOMETRIC.png`
-- `SentinelT_Internal_Layout.jpg`
-- `SentinelT_Exploded_Layout.jpg`
-- `SentinelT_Remote.jpg`
+- `SentinelT_Remote.svg` - 2.4 GHz human-operated RC relationship diagram.
 
-The internal and exploded views provide component-packaging evidence; the remote render demonstrates the intended human-operated 2.4 GHz control concept.
+The four Blender renders provide direct mechanical CAD evidence. The remote diagram documents the intended human-operated 2.4 GHz control concept.
 
 ## 2. Electronic Design
 
 Location: `Electronic_Design/`
 
-The dedicated electronic-design report is:
+The dedicated electronic-design report is generated as:
 
 `Electronic_Design/Electronic_Design.pdf`
 
@@ -63,11 +57,13 @@ It documents:
 
 ### Electronic Pictures
 
-`Electronic_Design/Pictures/` contains visual evidence required for the electronic-design section:
+`Electronic_Design/Pictures/` contains repository-native vector evidence:
 
-- `SentinelT_Power_Architecture.png` - circuit/power-flow schematic.
-- `SentinelT_EStop_Integration.png` - explicit mandatory E-Stop integration.
-- `SentinelT_Internal_Layout.jpg` - internal wiring/component-placement evidence.
+- `SentinelT_Internal_Layout.svg` - internal wiring/component-placement diagram.
+- `SentinelT_Exploded_Layout.svg` - labelled component-layout diagram.
+- `SentinelT_EStop_Integration.svg` - explicit mandatory E-Stop integration.
+
+The main power architecture source is also stored at `Schematics/SentinelT_Power_Architecture.svg`.
 
 ## 3. Schematics
 
