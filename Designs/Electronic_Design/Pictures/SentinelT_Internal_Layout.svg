@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800">
+<style>text{font-family:Arial,sans-serif;fill:#f5f5f5}.title{font-size:34px;font-weight:700}.label{font-size:18px;font-weight:700}.small{font-size:15px}.box{stroke:#d1d5db;stroke-width:3}.wireR{stroke:#d7191c;stroke-width:8;fill:none}.wireB{stroke:#111;stroke-width:8;fill:none}.tray{fill:#30363d;stroke:#9ca3af;stroke-width:4}</style>
+<rect width="1200" height="800" fill="#0c1015"/>
+<text x="50" y="55" class="title">SentinelT Internal Electronics &amp; Wiring Layout</text>
+<rect x="120" y="110" width="960" height="600" rx="35" class="tray"/>
+<rect x="410" y="150" width="380" height="90" rx="14" fill="#144a7a" class="box"/><text x="600" y="205" text-anchor="middle" class="label">3S LiPo Battery</text>
+<rect x="485" y="330" width="230" height="95" rx="14" fill="#111827" class="box"/><text x="600" y="385" text-anchor="middle" class="label">WP-880 ESC</text>
+<rect x="250" y="330" width="150" height="70" rx="12" fill="#0b7a34" class="box"/><text x="325" y="372" text-anchor="middle" class="label">X6B Receiver</text>
+<rect x="800" y="330" width="150" height="70" rx="12" fill="#111827" class="box"/><text x="875" y="372" text-anchor="middle" class="label">Fuse</text>
+<rect x="790" y="175" width="190" height="85" rx="12" fill="#111827" class="box"/><text x="885" y="225" text-anchor="middle" class="label">Power Distribution</text>
+<rect x="220" y="175" width="190" height="110" rx="12" fill="#111827" class="box"/><text x="315" y="225" text-anchor="middle" class="label">E-Stop Relay</text><text x="315" y="250" text-anchor="middle" class="small">/ Contactor</text>
+<rect x="535" y="265" width="130" height="45" rx="10" fill="#d89c00" class="box"/><text x="600" y="295" text-anchor="middle" class="label">XT60</text>
+<rect x="475" y="515" width="250" height="90" rx="14" fill="#111827" class="box"/><text x="600" y="565" text-anchor="middle" class="label">Auxiliary Controller</text>
+<rect x="180" y="490" width="190" height="105" rx="50" fill="#7c8794" class="box"/><text x="275" y="555" text-anchor="middle" class="label">Left Drive Motor</text>
+<rect x="830" y="490" width="190" height="105" rx="50" fill="#7c8794" class="box"/><text x="925" y="555" text-anchor="middle" class="label">Right Drive Motor</text>
+<circle cx="205" cy="660" r="42" fill="#b81c0d" class="box"/><text x="205" y="666" text-anchor="middle" class="label">E-Stop</text>
+<circle cx="990" cy="660" r="42" fill="#b81c0d" class="box"/><text x="990" y="655" text-anchor="middle" class="small">Main</text><text x="990" y="676" text-anchor="middle" class="small">ON/OFF</text>
+<path d="M600 240 L600 265" class="wireR"/><path d="M535 287 L315 285 L315 175" class="wireR"/><path d="M410 217 L315 217" class="wireR"/><path d="M410 205 L885 205" class="wireB"/><path d="M885 260 L875 330" class="wireR"/><path d="M885 260 L715 350" class="wireR"/><path d="M885 260 L690 515" class="wireR"/><path d="M485 375 L370 535" class="wireR"/><path d="M715 375 L830 535" class="wireR"/>
+<text x="600" y="750" text-anchor="middle" class="small">Conceptual service-bay layout. Final cable routing, conductor sizing and strain relief are verified after hardware implementation.</text>
+</svg>
