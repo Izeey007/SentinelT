@@ -1,40 +1,115 @@
-# Designs - SentinelT Robo Wars
+# Folder B - Designs
 
-This folder contains the mechanical, electronic, safety and simulation design work for SentinelT.
+**Project Developer:** TG Assegaai  
+**Build:** SentinelT Robo Wars RC Combat Robot
 
-## Mechanical Design
+## Purpose
 
-`Mechanical_Design/` contains:
+This folder contains the physical and electronic blueprints for SentinelT: mechanical CAD, fabrication intent, electronic design, circuit/safety schematics and digital simulation evidence.
 
-- the canonical Blender CAD model;
-- front, side, top and isometric renders;
-- internal packaging, exploded-layout and 2.4 GHz transmitter views;
-- fabrication and fastening approach;
-- verified CAD dimensions and footprint results.
+## 1. Mechanical Design
 
-**Verified CAD envelope:** 318.16 mm x 495.00 mm x 405.99 mm  
-**Footprint audit:** 180/180 checked frames PASS; 0 failed frames.
+Location: `Mechanical_Design/`
 
-## Electronic Design
+The canonical Blender model is:
 
-`Electronic_Design/` documents the selected 3S power architecture, 2.4 GHz RC link, drive motors, drive ESC, fuse/protection, main isolation, E-Stop control, high-current relay/contactor, power distribution and wiring plan.
+`Mechanical_Design/CAD/SentinelT_Rob.blend`
 
-## Schematics
+The current verified CAD envelope is **318.16 mm x 495.00 mm x 405.99 mm**. The footprint audit checks **204 physical mesh objects** across frames **1-180**, with **0 failed frames** and a result of **PASS - 180/180**.
 
-`Schematics/SentinelT_Power_and_EStop.md` explicitly identifies:
+### Fabrication Approach
 
-- **MAIN ON/OFF SWITCH**;
-- **EMERGENCY STOP / power-disable stage**;
-- battery and fuse path;
-- 2.4 GHz RC receiver;
-- drive and auxiliary controllers;
-- RC-loss safe-state behaviour.
+- 6 mm HDPE is the current chassis/armor material plan.
+- Metal is used where shafts, brackets, motor hardware, fasteners and electrical terminals require higher strength.
+- Bolted panels support access, repair and component replacement.
+- Drive components are placed inside protected chassis zones.
+- Sloped outer protection reduces direct loading on flat vulnerable faces.
+- Internal service space is reserved for the battery, drive controller, receiver, fuse, power distribution, main isolation, E-Stop relay/contactor and auxiliary controller.
 
-## Simulation and Digital Verification
+### Mechanical Render Evidence
 
-`Simulation/` contains repeatable Blender/Python tools and recorded evidence for:
+`Mechanical_Design/Renders/` contains:
 
-- 500 mm x 500 mm footprint verification across frames 1-180;
-- engineering mass-budget reporting.
+- `01_SentinelT_FRONT.png`
+- `02_SentinelT_SIDE.png`
+- `03_SentinelT_TOP.png`
+- `04_SentinelT_ISOMETRIC.png`
+- `SentinelT_Internal_Layout.jpg`
+- `SentinelT_Exploded_Layout.jpg`
+- `SentinelT_Remote.jpg`
 
-The 4.650 kg value is an engineering allocation rather than a measured physical mass. Final physical weighing and electrical/mechanical validation will be performed on the fabricated robot.
+The internal and exploded views provide component-packaging evidence; the remote render demonstrates the intended human-operated 2.4 GHz control concept.
+
+## 2. Electronic Design
+
+Location: `Electronic_Design/`
+
+The dedicated electronic-design report is:
+
+`Electronic_Design/Electronic_Design.pdf`
+
+It documents:
+
+- 3S battery architecture;
+- 2.4 GHz RC receiver/control link;
+- brushed drive-control architecture;
+- fuse and high-current distribution;
+- accessible main ON/OFF isolation;
+- mandatory E-Stop integration;
+- separate high-current relay/contactor isolation stage;
+- component justification;
+- internal wiring/component placement;
+- hardware items that still require physical current/rating verification.
+
+### Electronic Pictures
+
+`Electronic_Design/Pictures/` contains visual evidence required for the electronic-design section:
+
+- `SentinelT_Power_Architecture.png` - circuit/power-flow schematic.
+- `SentinelT_EStop_Integration.png` - explicit mandatory E-Stop integration.
+- `SentinelT_Internal_Layout.jpg` - internal wiring/component-placement evidence.
+
+## 3. Schematics
+
+Location: `Schematics/`
+
+Contains the source annotated power/safety diagrams. The documented power path is conceptually:
+
+```text
+3S Battery
+   -> Main Fuse / Protection
+   -> Accessible Main ON/OFF Isolator
+   -> E-Stop Controlled High-Current Relay/Contactor
+   -> Power Distribution
+       -> Drive Branch
+       -> Control Branch
+       -> Auxiliary Branch
+```
+
+The mushroom E-Stop is not assumed to carry full motor current by itself. It commands a separate high-current isolation device so actuator power can be removed independently of software.
+
+## 4. Simulation
+
+Location: `Simulation/`
+
+Contains:
+
+- `SentinelT_Footprint_Audit.py` - Blender/Python world-space footprint verification.
+- `SentinelT_Footprint_Audit.txt` - recorded audit result.
+- `SentinelT_Mass_Budget.py` - engineering mass-allocation check.
+
+Verified audit result:
+
+| Item | Result |
+|---|---:|
+| Maximum X | **318.16 mm** |
+| Maximum Y | **495.00 mm** |
+| Maximum Z | **405.99 mm** |
+| Physical meshes | **204** |
+| Frames checked | **180** |
+| Failed frames | **0** |
+| Status | **PASS - 180/180** |
+
+## Physical Verification Status
+
+Digital design and simulation evidence is complete for this stage. Measured mass, final current draw, physical cable routing, drivetrain behavior and E-Stop interruption testing require the fabricated hardware and will be verified after hardware implementation.
