@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800">
+<style>text{font-family:Arial,sans-serif;fill:#f5f5f5}.title{font-size:34px;font-weight:700}.label{font-size:17px;font-weight:700}.box{stroke:#d1d5db;stroke-width:3}.tray{fill:#30363d;stroke:#9ca3af;stroke-width:4}.lead{stroke:#8b949e;stroke-width:3;stroke-dasharray:8 7;fill:none}</style>
+<rect width="1200" height="800" fill="#0c1015"/><text x="50" y="55" class="title">SentinelT Exploded Component Layout</text>
+<rect x="260" y="300" width="680" height="360" rx="28" class="tray"/><text x="600" y="635" text-anchor="middle" class="label">SentinelT Chassis Service Area</text>
+<rect x="410" y="85" width="380" height="85" rx="14" fill="#144a7a" class="box"/><text x="600" y="135" text-anchor="middle" class="label">3S LiPo Battery</text><path d="M600 170 L600 300" class="lead"/>
+<rect x="480" y="205" width="240" height="75" rx="12" fill="#111827" class="box"/><text x="600" y="250" text-anchor="middle" class="label">WP-880 ESC</text><path d="M600 280 L600 330" class="lead"/>
+<rect x="170" y="120" width="155" height="65" rx="12" fill="#0b7a34" class="box"/><text x="248" y="160" text-anchor="middle" class="label">X6B Receiver</text><path d="M325 155 L410 325" class="lead"/>
+<rect x="875" y="120" width="140" height="65" rx="12" fill="#111827" class="box"/><text x="945" y="160" text-anchor="middle" class="label">Fuse</text><path d="M875 155 L790 325" class="lead"/>
+<rect x="900" y="235" width="210" height="75" rx="12" fill="#111827" class="box"/><text x="1005" y="280" text-anchor="middle" class="label">Power Distribution</text><path d="M900 275 L825 360" class="lead"/>
+<rect x="95" y="235" width="210" height="85" rx="12" fill="#111827" class="box"/><text x="200" y="275" text-anchor="middle" class="label">E-Stop Relay /</text><text x="200" y="298" text-anchor="middle" class="label">Contactor</text><path d="M305 280 L380 360" class="lead"/>
+<rect x="520" y="690" width="160" height="55" rx="12" fill="#111827" class="box"/><text x="600" y="725" text-anchor="middle" class="label">Aux Controller</text><path d="M600 690 L600 640" class="lead"/>
+<rect x="70" y="465" width="185" height="90" rx="45" fill="#7c8794" class="box"/><text x="163" y="520" text-anchor="middle" class="label">Left Drive Motor</text><path d="M255 510 L330 500" class="lead"/>
+<rect x="945" y="465" width="185" height="90" rx="45" fill="#7c8794" class="box"/><text x="1038" y="520" text-anchor="middle" class="label">Right Drive Motor</text><path d="M945 510 L870 500" class="lead"/>
+<circle cx="130" cy="665" r="48" fill="#b81c0d" class="box"/><text x="130" y="671" text-anchor="middle" class="label">E-Stop</text><path d="M178 650 L320 570" class="lead"/>
+<circle cx="1070" cy="665" r="48" fill="#b81c0d" class="box"/><text x="1070" y="657" text-anchor="middle" class="label">Main</text><text x="1070" y="680" text-anchor="middle" class="label">ON/OFF</text><path d="M1022 650 L880 570" class="lead"/>
+<rect x="535" y="178" width="130" height="42" rx="10" fill="#d89c00" class="box"/><text x="600" y="205" text-anchor="middle" class="label">XT60</text>
+</svg>
