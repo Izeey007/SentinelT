@@ -13,6 +13,8 @@ Location: `Mechanical_Design/`
 
 The final local Blender model is named `SentinelT_Rob.blend`. The current verified CAD envelope is **318.16 mm x 495.00 mm x 405.99 mm**. The footprint audit checks **204 physical mesh objects** across frames **1-180**, with **0 failed frames** and a result of **PASS - 180/180**.
 
+The CAD folder also contains `Mechanical_Design/CAD/README.md`, which explains how a reviewer can open the Blender file, return SentinelT to its Frame 0 neutral position, use `SentinelT_Controls`, play the 1-180 animation, inspect wheel/drive movement, cutter ON/OFF animation, hammer motion limits and upper-body rotation, and rerun footprint verification after any animation edits.
+
 ### Fabrication Approach
 
 - 6 mm HDPE is the current chassis/armor material plan.
