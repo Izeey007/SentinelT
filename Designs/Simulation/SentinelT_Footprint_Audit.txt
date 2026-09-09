@@ -1,0 +1,13 @@
+SENTINELT FOOTPRINT AUDIT
+==========================
+
+Frames audited: 1-180
+Physical mesh objects: 204
+
+Maximum X: 318.16 mm (frame 1)
+Maximum Y: 495.00 mm (frame 1)
+Maximum Z: 405.99 mm
+
+Failed frames: 0
+
+RESULT: PASS - 180/180 FRAMES
