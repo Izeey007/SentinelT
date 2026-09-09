@@ -13,7 +13,7 @@ Accordingly:
 - no FQ&A attendance bonus is claimed;
 - no facilitator name, date or attendance time is invented;
 - no screenshot or proof image is fabricated;
-- `Documentation/FQA_Proof/` is intentionally reserved without attendance screenshots.
+- `C_Documentation/FQA_Proof/` is intentionally reserved without attendance screenshots.
 
 | Session Date | Time | Facilitator | Key Takeaway / Question | Proof of Attendance |
 |---|---|---|---|---|
