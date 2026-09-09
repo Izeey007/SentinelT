@@ -11,7 +11,7 @@ This folder contains the formal SentinelT submission documents: the pitch deck, 
 
 Location: `Pitch_Deck/SentinelT_Pitch_Deck.pdf`
 
-The pitch deck is a **7-page A4 portrait PDF** and covers:
+The pitch deck covers:
 
 - SentinelT introduction;
 - Robo Wars design constraints;
