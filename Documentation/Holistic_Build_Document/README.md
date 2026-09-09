@@ -36,9 +36,12 @@ The report covers:
 
 - X: **318.16 mm**
 - Y: **495.00 mm**
-- Z: **255.41 mm**
+- Z: **405.99 mm**
 - Footprint audit: **180/180 PASS**
+- Failed frames: **0**
 - Engineering mass budget: **4.650 kg**
 - Remaining design margin: **0.350 kg**
+
+The current digital design package also contains internal component packaging, an exploded labelled component view and a separate 2.4 GHz transmitter presentation view.
 
 The report clearly separates digital engineering results from measurements that require the completed physical robot.
