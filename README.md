@@ -1,97 +1,103 @@
 # SentinelT - Robo Wars RC Combat Robot
 
-**Project owner and designer:** Thato Glen Assegaai  
+**Project Developer:** TG Assegaai  
 **Category:** Robo Wars - RC Combat
 
-## Project Overview
+## Project Summary
 
-SentinelT is my independently designed and developed RC combat robot for Robo Wars. I developed the mechanical concept, Blender CAD model, dimensional-verification scripts, 2.4 GHz control framework, power and safety architecture, component plan, and technical documentation contained in this repository.
+SentinelT is a human-operated 2.4 GHz RC combat robot built around a compact armored chassis, protected drivetrain, serviceable internal electronics bay, fail-safe power architecture and guarded active-mechanism provision. I developed the mechanical CAD, dimensional verification tools, control framework, safety architecture, component plan and technical documentation contained in this repository.
 
-The design combines a compact armored chassis, protected drive layout, sloped external protection, serviceable body panels, an articulated upper structure, human-operated 2.4 GHz RC control, and a guarded active-mechanism provision.
+The current digital build has been audited across frames 1-180. The verified CAD envelope is **318.16 mm x 495.00 mm x 405.99 mm**. The X/Y footprint remains inside the required **500 mm x 500 mm** limit for all audited frames: **180/180 PASS, 0 failed frames**. The current **4.650 kg** value is an engineering mass allocation, leaving **0.350 kg** design margin below 5 kg; measured physical mass will be verified after hardware implementation.
 
-## Robo Wars Design Requirements
+## Repository Structure
 
-| Requirement | SentinelT Status |
-|---|---|
-| Maximum footprint | **PASS - 318.16 mm x 495.00 mm** |
-| Current CAD height | **405.99 mm** |
-| Footprint verification | **180/180 frames PASS** |
-| Failed footprint frames | **0** |
-| Mass limit | Strictly below **5.000 kg** |
-| Engineering mass budget | **4.650 kg** |
-| Design margin | **0.350 kg** |
-| Control | Human-operated **2.4 GHz RC** |
-| Main ON/OFF | Included in the power-isolation architecture |
-| Emergency Stop | Included and explicitly documented |
-| Projectiles / flames / liquids | Not used |
-
-> **Mass note:** 4.650 kg is an engineering design allocation, not a measured physical mass. The completed physical robot must be weighed on a calibrated scale before operational use.
-
-## Repository Map
+The repository is organized in the required evaluation order below. GitHub may display folders alphabetically, but the project structure maps directly to Folder A, Folder B and Folder C.
 
 ```text
 SentinelT/
-|- README.md
-|- Source_Code/
-|  |- Firmware/
-|  |- RC_Control/
-|  `- Flowcharts/
-|- Designs/
-|  |- Mechanical_Design/
-|  |  |- CAD/
-|  |  `- Renders/
-|  |- Electronic_Design/
-|  |- Schematics/
-|  `- Simulation/
-|- Documentation/
-|  |- Pitch_Deck/
-|  |- BOM/
-|  |- Holistic_Build_Document/
-|  |- FQA_Attendance_Log.md
-|  `- FQA_Proof/
-`- PROJECT_COMPLETENESS_CHECKLIST.md
+├── README.md
+├── Folder A: Source_Code/
+├── Folder B: Designs/
+├── Folder C: Documentation/
+└── PROJECT_COMPLETENESS_CHECKLIST.md
 ```
 
-## Mechanical Design Evidence
+### Folder A: `Source_Code/`
 
-The Blender CAD model is stored in `Designs/Mechanical_Design/CAD/`. Mechanical renders and technical packaging views are stored in `Designs/Mechanical_Design/Renders/`.
+Contains the programming framework required to operate SentinelT and the visual logic used to explain it.
 
-I used Blender/Python dimensional auditing throughout development. The current verified CAD envelope is **318.16 mm x 495.00 mm x 405.99 mm**, with **0 failed frames out of 180 checked**.
+- `Firmware/` - C/C++ Arduino-style control framework for RC validation, safe-state handling, differential-drive mixing and auxiliary enable logic.
+- `Flowcharts/` - high-resolution control-flow diagram showing startup, E-Stop checks, RC validation, command handling and SAFE_DISABLED behavior.
+- `README.md` - detailed explanation of the programming language, framework, control method, state logic, failsafe strategy, implementation parameters and folder contents.
 
-The current digital package also includes:
+The control architecture is human-operated **2.4 GHz RC**, not autonomous. The software defaults to a disabled state on startup/reset and returns to SAFE_DISABLED when the RC signal is invalid/lost, the E-Stop is active or command data fails validation. Hardware-specific receiver protocol, pin mapping and ESC calibration will be verified and locked after hardware implementation.
 
-- an internal electronics and drivetrain packaging layout;
-- an exploded component-layout view with labelled hardware;
-- a SentinelT + 2.4 GHz transmitter presentation view;
-- a repeatable footprint-audit report.
+### Folder B: `Designs/`
 
-## Control and Safety
+Contains the complete mechanical, electronic, safety and simulation design evidence.
 
-SentinelT uses human-operated 2.4 GHz RC control. The safety architecture includes:
+- `Mechanical_Design/CAD/` - canonical Blender model: `SentinelT_Rob.blend`.
+- `Mechanical_Design/Renders/` - front, side, top and isometric CAD views plus internal component layout, exploded layout and robot + 2.4 GHz remote presentation view.
+- `Electronic_Design/Electronic_Design.pdf` - dedicated A4 electronic-design report covering component selection, circuit architecture, wiring, main ON/OFF isolation and mandatory E-Stop integration.
+- `Electronic_Design/Pictures/` - circuit/power schematic, E-Stop integration diagram and internal wiring/component-layout evidence.
+- `Schematics/` - source safety/power architecture diagrams and annotations.
+- `Simulation/` - Blender/Python footprint verification scripts, mass-budget tool and the recorded footprint audit.
+- `README.md` - detailed summary of the mechanical, electronic, schematic, simulation and safety evidence.
 
-- accessible main ON/OFF isolation;
-- Emergency Stop (E-Stop) power-disable architecture;
-- safe-state actuator disable on invalid or lost RC signal;
-- disabled outputs during controller startup/reset;
-- separate drive and auxiliary control paths.
+Verified digital geometry:
 
-The annotated power and E-Stop architecture is documented in `Designs/Schematics/SentinelT_Power_and_EStop.md`.
+| Verification item | Result |
+|---|---:|
+| Maximum X | **318.16 mm** |
+| Maximum Y | **495.00 mm** |
+| Maximum Z | **405.99 mm** |
+| Physical mesh objects | **204** |
+| Frames audited | **180** |
+| Failed footprint frames | **0** |
+| Footprint result | **PASS - 180/180** |
 
-## Documentation
+### Folder C: `Documentation/`
 
-The `Documentation/` folder contains:
+Contains the formal submission documents.
 
-- the 7-page A4 portrait pitch deck PDF;
-- the Bill of Materials spreadsheet;
-- the A4 portrait holistic build report;
-- the Facilitator Q&A attendance-log structure and proof folder.
+- `Pitch_Deck/SentinelT_Pitch_Deck.pdf` - 7-page A4 portrait pitch deck covering the Robo Wars constraints, SentinelT solution/buildability, CAD verification, electronics/safety, mass/cost and Project Developer responsibilities.
+- `BOM/SentinelT_Bill_of_Materials.xlsx` - component financing workbook with component name, quantity, cost per unit, supplier, stock code, direct URL and cost totals.
+- `Holistic_Build_Document/SentinelT_Holistic_Build_Document.pdf` - comprehensive A4 report tying together the context, constraints, solution overview, mechanical design, electronic design, E-Stop integration, programming framework, simulation, mass budget and BOM summary.
+- `FQA_Attendance_Log.md` - records that no Facilitator Q&A session was attended; no FQ&A bonus is claimed and no evidence is fabricated.
+- `FQA_Proof/` - reserved proof directory; intentionally contains no attendance screenshots because no FQ&A session was attended.
+- `README.md` - detailed summary and status of every documentation deliverable.
 
-## Project Status
+## Robo Wars Requirements and SentinelT Response
 
-The CAD geometry, internal packaging concept, technical component views, dimensional simulation, control framework, safety architecture, current component plan and technical documentation are complete as a digital engineering package.
+| Requirement | SentinelT response |
+|---|---|
+| Maximum footprint | **PASS - 318.16 mm x 495.00 mm** |
+| Weight | Engineering allocation **4.650 kg**; physical weighing after hardware implementation |
+| Control frequency | Human-operated **2.4 GHz RC** |
+| Main ON/OFF | Accessible main battery-isolation stage included in the electrical architecture |
+| Emergency Stop | Explicit mushroom E-Stop + separate high-current relay/contactor power-disable architecture |
+| Restricted weapon types | No projectiles, flames or liquids |
+| Simulation | Blender CAD + Python footprint verification, 180/180 frames PASS |
 
-Physical fabrication and testing remain separate implementation stages. Measured physical mass, actual current draw, thermal behaviour, drivetrain performance and E-Stop interruption performance will be verified only on the completed hardware.
+## Control and Safety Architecture
 
-## Ownership Statement
+SentinelT uses a layered safety approach:
 
-SentinelT is independently designed and developed by **Thato Glen Assegaai**. Third-party commercial components are identified by manufacturer and supplier in the Bill of Materials; the SentinelT system design, CAD work, integration architecture, control framework and documentation are presented as my project work.
+1. Accessible main ON/OFF battery isolation.
+2. Independent E-Stop control loop commanding a separate high-current relay/contactor.
+3. Software SAFE_DISABLED state at startup/reset.
+4. RC-signal validation and timeout handling.
+5. Disabled auxiliary actuation unless explicitly enabled by the operator.
+
+The hardware E-Stop is not treated as a software-only feature. The power architecture is documented in `Designs/Schematics/` and summarized visually in `Designs/Electronic_Design/Pictures/`.
+
+## Current Development Status
+
+The digital engineering package is complete for the current design stage: CAD model, mechanical renders, internal packaging, electronic architecture, E-Stop integration, control framework, flowchart, footprint simulation, mass allocation, BOM structure, pitch deck and holistic report are included.
+
+The following items require the physical robot and therefore remain intentionally unverified until hardware implementation: measured robot mass, measured current draw, final cable routing/strain relief, drivetrain performance, thermal behavior, battery runtime, receiver/ESC calibration and physical E-Stop interruption testing.
+
+## Project Developer
+
+**TG Assegaai**  
+Signature in formal reports: **Thato Glen Assegaai**
