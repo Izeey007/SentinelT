@@ -1,4 +1,4 @@
-# Folder B - Designs
+#Designs
 
 **Project Developer:** TG Assegaai  
 **Build:** SentinelT Robo Wars RC Combat Robot
