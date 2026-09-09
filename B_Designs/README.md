@@ -1,4 +1,4 @@
-#Designs
+# Folder B - Designs
 
 **Project Developer:** TG Assegaai  
 **Build:** SentinelT Robo Wars RC Combat Robot
@@ -11,9 +11,9 @@ This folder contains the physical and electronic blueprints for SentinelT: mecha
 
 Location: `Mechanical_Design/`
 
-The final local Blender model is named `SentinelT_Rob.blend`. The current verified CAD envelope is **318.16 mm x 495.00 mm x 405.99 mm**. The footprint audit checks **204 physical mesh objects** across frames **1-180**, with **0 failed frames** and a result of **PASS - 180/180**.
+The canonical Blender model is `Mechanical_Design/CAD/SentinelT_Rob.blend`. The recorded digital baseline is **318.16 mm x 495.00 mm x 405.99 mm**. The footprint audit checked **204 physical mesh objects** across frames **1-180**, with **0 failed frames** and a recorded result of **PASS - 180/180**.
 
-The CAD folder also contains `Mechanical_Design/CAD/README.md`, which explains how a reviewer can open the Blender file, return SentinelT to its Frame 0 neutral position, use `SentinelT_Controls`, play the 1-180 animation, inspect wheel/drive movement, cutter ON/OFF animation, hammer motion limits and upper-body rotation, and rerun footprint verification after any animation edits.
+`Mechanical_Design/CAD/README.md` explains how a reviewer can open the Blender file, return SentinelT to its Frame 0 neutral position, select `SentinelT_Controls`, play the prepared mechanism demonstration, inspect wheel/drive movement, cutter ON/OFF behavior, hammer motion limits and upper-body rotation, and rerun footprint verification after any geometry or animation edit.
 
 ### Fabrication Approach
 
@@ -32,15 +32,16 @@ The CAD folder also contains `Mechanical_Design/CAD/README.md`, which explains h
 - `02_SentinelT_SIDE.png`
 - `03_SentinelT_TOP.png`
 - `04_SentinelT_ISOMETRIC.png`
-- `SentinelT_Remote.svg` - 2.4 GHz human-operated RC relationship diagram.
+- `SentinelT_Remote.png`
+- `SentinelT_Remote.svg`
 
-The four Blender renders provide direct mechanical CAD evidence. The remote diagram documents the intended human-operated 2.4 GHz control concept.
+The four main Blender renders provide direct mechanical CAD evidence. The remote files document the intended human-operated 2.4 GHz control relationship.
 
 ## 2. Electronic Design
 
 Location: `Electronic_Design/`
 
-The dedicated electronic-design report is generated as:
+The dedicated electronic-design report is:
 
 `Electronic_Design/Electronic_Design.pdf`
 
@@ -59,19 +60,20 @@ It documents:
 
 ### Electronic Pictures
 
-`Electronic_Design/Pictures/` contains repository-native vector evidence:
+`Electronic_Design/Pictures/` contains clear circuit and layout evidence, including:
 
-- `SentinelT_Internal_Layout.svg` - internal wiring/component-placement diagram.
-- `SentinelT_Exploded_Layout.svg` - labelled component-layout diagram.
-- `SentinelT_EStop_Integration.svg` - explicit mandatory E-Stop integration.
+- `SentinelT_Internal_Layout.png` and `.svg` - internal wiring/component placement.
+- `SentinelT_Exploded_Layout.png` and `.svg` - labelled component layout.
+- `SentinelT_EStop_Integration.png` and `.svg` - explicit mandatory E-Stop integration.
+- `SentinelT_Power_Architecture.png` - power architecture overview.
 
-The main power architecture source is also stored at `Schematics/SentinelT_Power_Architecture.svg`.
+The editable/source power schematic is also stored at `Schematics/SentinelT_Power_Architecture.svg`.
 
 ## 3. Schematics
 
 Location: `Schematics/`
 
-Contains the source annotated power/safety diagrams. The documented power path is conceptually:
+The documented power path is:
 
 ```text
 3S Battery
@@ -96,7 +98,7 @@ Contains:
 - `SentinelT_Footprint_Audit.txt` - recorded audit result.
 - `SentinelT_Mass_Budget.py` - engineering mass-allocation check.
 
-Verified audit result:
+Recorded audit result:
 
 | Item | Result |
 |---|---:|
@@ -108,6 +110,8 @@ Verified audit result:
 | Failed frames | **0** |
 | Status | **PASS - 180/180** |
 
+The final Blender file also contains refined reviewer animation controls. The supplied audit remains valid evidence for the verified digital baseline; if geometry or animation is changed again, the audit must be rerun before treating the modified state as a new verification result.
+
 ## Physical Verification Status
 
-Digital design and simulation evidence is complete for this stage. Measured mass, final current draw, physical cable routing, drivetrain behavior and E-Stop interruption testing require the fabricated hardware and will be verified after hardware implementation.
+Digital design and simulation evidence is complete for this stage. Measured mass, final current draw, physical cable routing, drivetrain behavior, receiver/ESC calibration and E-Stop interruption testing require fabricated hardware and will be verified after hardware implementation.
