@@ -26,9 +26,12 @@ This checklist tracks the current engineering completeness of SentinelT.
 - [x] Blender CAD file.
 - [x] Front, side, top and isometric renders.
 - [x] 318.16 mm x 495.00 mm verified footprint.
-- [x] 180/180 footprint frames PASS.
+- [x] Current CAD height recorded as 405.99 mm.
+- [x] 180/180 footprint frames PASS; 0 failed frames.
 - [x] Material/fabrication approach documented.
-- [ ] Add internal component models, power wiring, RC transmitter model, cutaway view and exploded internal view in the next Blender revision.
+- [x] Internal component packaging layout prepared.
+- [x] Exploded labelled component-layout view prepared.
+- [x] 2.4 GHz transmitter presentation view prepared.
 
 ## Electronic and Safety Design
 
@@ -57,4 +60,4 @@ This checklist tracks the current engineering completeness of SentinelT.
 - [ ] Battery runtime and temperature behaviour.
 - [ ] Drivetrain response under load.
 - [ ] E-Stop interruption test on completed hardware.
-- [ ] Final internal packaging and cable-routing verification.
+- [ ] Final physical internal packaging and cable-routing verification.
