@@ -166,9 +166,9 @@ The model does **not** claim full rigid-body combat physics, measured motor torq
 
 ## Footprint Verification
 
-The verified engineering baseline is **318.16 mm x 495.00 mm** in plan view, within the required 500 mm x 500 mm Robo Wars footprint.
+The recorded engineering baseline is **318.16 mm x 495.00 mm** in plan view, within the required 500 mm x 500 mm Robo Wars footprint. The documented audit checked **180 frames with 0 failed frames**.
 
-The digital audit checked **180 frames with 0 failed frames** before the latest simulation-control refinement. After changing geometry or animation, rerun the footprint audit in `Designs/Simulation/` before treating the modified `.blend` as the submission model.
+The mechanism controls were refined after that recorded baseline. If geometry or animation is changed again, rerun `B_Designs/Simulation/SentinelT_Footprint_Audit.py` before treating the modified state as a new verification result.
 
 ## Important Editing Rules
 
