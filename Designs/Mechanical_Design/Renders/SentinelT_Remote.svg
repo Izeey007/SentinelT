@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" viewBox="0 0 1200 720">
+<style>text{font-family:Arial,sans-serif;fill:#f5f5f5}.title{font-size:34px;font-weight:700}.label{font-size:20px;font-weight:700}.small{font-size:16px}.line{stroke:#9ca3af;stroke-width:4}.red{fill:#7d1919;stroke:#c44;stroke-width:3}.dark{fill:#20262e;stroke:#9ca3af;stroke-width:3}</style>
+<rect width="1200" height="720" fill="#0c1015"/>
+<text x="50" y="58" class="title">SentinelT + 2.4 GHz Human-Operated Remote Control</text>
+<rect x="110" y="230" width="520" height="260" rx="38" class="dark"/><rect x="165" y="270" width="410" height="140" rx="30" class="red"/><circle cx="220" cy="340" r="45" class="dark"/><circle cx="520" cy="340" r="45" class="dark"/><rect x="315" y="185" width="110" height="120" rx="35" class="red"/><circle cx="370" cy="170" r="65" class="red"/><text x="370" y="455" text-anchor="middle" class="label">SentinelT</text>
+<rect x="790" y="210" width="250" height="320" rx="35" class="dark"/><line x1="915" y1="210" x2="915" y2="115" class="line"/><circle cx="855" cy="315" r="20" fill="#9ca3af"/><circle cx="975" cy="315" r="20" fill="#9ca3af"/><rect x="845" y="380" width="140" height="70" rx="10" fill="#144a7a" stroke="#9ca3af" stroke-width="3"/><text x="915" y="570" text-anchor="middle" class="label">2.4 GHz RC Transmitter</text>
+<path d="M650 350 C710 300 730 300 775 350" fill="none" stroke="#8fd3ff" stroke-width="5" stroke-dasharray="12 10"/><path d="M650 390 C710 440 730 440 775 390" fill="none" stroke="#8fd3ff" stroke-width="5" stroke-dasharray="12 10"/><text x="715" y="335" text-anchor="middle" class="small">2.4 GHz link</text>
+<text x="600" y="660" text-anchor="middle" class="small">Remote-control concept diagram. SentinelT remains human-operated; autonomous control is not used.</text>
+</svg>
