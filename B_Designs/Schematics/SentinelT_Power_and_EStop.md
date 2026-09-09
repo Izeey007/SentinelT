@@ -1,8 +1,8 @@
 # SentinelT Power, Control and Emergency-Stop Architecture
 
-**Project:** SentinelT  
+**Build:** SentinelT  
 **Category:** Robo Wars - RC Combat  
-**Designer:** Thato Glen Assegaai
+**Project Developer:** TG Assegaai
 
 ## Clear Vector Schematic
 
@@ -10,7 +10,7 @@
 
 ## Safety Objective
 
-I designed SentinelT with two separate operator-accessible safety functions:
+SentinelT uses two separate operator-accessible safety functions:
 
 1. **MAIN ON/OFF SWITCH**
 2. **EMERGENCY STOP (E-STOP)**
@@ -122,7 +122,7 @@ flowchart TD
 
 ## Final Physical Verification
 
-Before physical operation, I will lock and verify the exact:
+Before physical operation, the following will be locked and verified:
 
 - final active-mechanism motor/controller;
 - final main/branch protection ratings;
