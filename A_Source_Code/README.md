@@ -1,7 +1,7 @@
 # Folder A - Source Code
 
 **Project Developer:** TG Assegaai  
-**Build:** SentinelT Robo Wars RC Combat Robot
+**Build:** SentinelT
 
 ## Purpose
 
