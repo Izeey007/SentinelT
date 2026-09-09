@@ -51,11 +51,14 @@ Only genuine attendance entries and evidence are recorded.
 ## Verified Engineering Summary
 
 - CAD footprint: **318.16 mm x 495.00 mm**
-- CAD height: **255.41 mm**
+- CAD height: **405.99 mm**
+- Physical mesh objects audited: **204**
 - Frames checked: **180**
 - Failed frames: **0**
-- Footprint status: **PASS**
+- Footprint status: **PASS - 180/180 frames**
 - Engineering mass budget: **4.650 kg**
 - Design margin: **0.350 kg**
+
+The digital mechanical package also includes an internal packaging view, an exploded labelled component view and a separate 2.4 GHz transmitter presentation view.
 
 The mass figure is an engineering allocation and will be physically verified on the completed robot.
