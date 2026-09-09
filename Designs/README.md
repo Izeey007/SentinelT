@@ -6,13 +6,14 @@ This folder contains the mechanical, electronic, safety and simulation design wo
 
 `Mechanical_Design/` contains:
 
-- the Blender CAD model;
+- the canonical Blender CAD model;
 - front, side, top and isometric renders;
+- internal packaging, exploded-layout and 2.4 GHz transmitter views;
 - fabrication and fastening approach;
 - verified CAD dimensions and footprint results.
 
-**Verified CAD envelope:** 318.16 mm x 495.00 mm x 255.41 mm  
-**Footprint audit:** 180/180 checked frames PASS.
+**Verified CAD envelope:** 318.16 mm x 495.00 mm x 405.99 mm  
+**Footprint audit:** 180/180 checked frames PASS; 0 failed frames.
 
 ## Electronic Design
 
@@ -31,9 +32,9 @@ This folder contains the mechanical, electronic, safety and simulation design wo
 
 ## Simulation and Digital Verification
 
-`Simulation/` contains repeatable Blender/Python tools for:
+`Simulation/` contains repeatable Blender/Python tools and recorded evidence for:
 
-- 500 mm x 500 mm footprint verification;
+- 500 mm x 500 mm footprint verification across frames 1-180;
 - engineering mass-budget reporting.
 
 The 4.650 kg value is an engineering allocation rather than a measured physical mass. Final physical weighing and electrical/mechanical validation will be performed on the fabricated robot.
