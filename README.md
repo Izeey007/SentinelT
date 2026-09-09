@@ -99,5 +99,4 @@ The following items require the physical robot and therefore remain intentionall
 
 ## Project Developer
 
-**TG Assegaai**  
-Signature in formal reports: **Thato Glen Assegaai**
+**Thato Glen Assegaai**
