@@ -1,20 +1,20 @@
-# Facilitator Q&A (FQ&A) Attendance Logbook
+# Robo Wars - Facilitator Q&A (FQ&A) Attendance Logbook
 
-**Individual Name:** Thato Glen Assegaai  
-**Category:** Robo Wars
+**Build:** SentinelT  
+**Project Developer:** TG Assegaai  
+**Category:** Robo Wars - RC Combat
 
-*Log only sessions actually attended. Every entry must include a direct relative link to genuine attendance evidence stored in `FQA_Proof/`.*
+## Attendance Status
 
-## Attendance Log
+I did **not** attend a Facilitator Q&A session during this submission stage.
 
-| Session Date | Time (Start-End) | Facilitator Name/Username | Key Takeaway / Question Asked | Proof of Attendance (Screenshot) |
-| :--- | :--- | :--- | :--- | :--- |
-| *No verified attendance entry supplied yet* | - | - | - | - |
+Accordingly:
 
-## Screenshot Directory
+- no FQ&A attendance bonus is claimed;
+- no facilitator name, date or attendance time is invented;
+- no screenshot or proof image is fabricated;
+- `Documentation/FQA_Proof/` is intentionally reserved without attendance screenshots.
 
-All screenshots referenced above must be stored in:
-
-`Documentation/FQA_Proof/`
-
-No attendance entry or screenshot is added unless it is genuine evidence.
+| Session Date | Time | Facilitator | Key Takeaway / Question | Proof of Attendance |
+|---|---|---|---|---|
+| Not attended | - | - | No FQ&A attendance claimed | No screenshot available |
