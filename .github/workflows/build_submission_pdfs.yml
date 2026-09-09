@@ -1,0 +1,41 @@
+name: Build SentinelT submission PDFs
+
+on:
+  push:
+    paths:
+      - 'tools/build_submission_pdfs.py'
+      - 'Designs/Electronic_Design/Pictures/**.svg'
+      - 'Designs/Schematics/SentinelT_Power_Architecture.svg'
+      - 'Source_Code/Flowcharts/SentinelT_Control_Flow.svg'
+      - '.github/workflows/build_submission_pdfs.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install PDF build dependencies
+        run: pip install reportlab pillow cairosvg
+      - name: Build SentinelT submission PDFs and technical images
+        run: python tools/build_submission_pdfs.py
+      - name: Commit generated submission artifacts
+        run: |
+          git config user.name 'SentinelT Build'
+          git config user.email 'actions@users.noreply.github.com'
+          git add Documentation/Pitch_Deck/SentinelT_Pitch_Deck.pdf \
+                  Documentation/Holistic_Build_Document/SentinelT_Holistic_Build_Document.pdf \
+                  Designs/Electronic_Design/Electronic_Design.pdf \
+                  Designs/Electronic_Design/Pictures/*.png \
+                  Source_Code/Flowcharts/SentinelT_Control_Flow.png \
+                  Designs/Mechanical_Design/Renders/SentinelT_Remote.png
+          git diff --cached --quiet || git commit -m 'Rebuild SentinelT submission documents'
+          git push
