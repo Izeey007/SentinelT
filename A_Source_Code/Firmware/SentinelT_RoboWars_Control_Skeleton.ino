@@ -14,7 +14,7 @@
   - RC commands time out after 250 ms without a valid update.
   - An active E-Stop status forces SAFE_DISABLED.
   - The physical E-Stop must independently remove actuator power through the
-    high-current isolation architecture documented under Designs/Schematics/.
+    high-current isolation architecture documented under B_Designs/Schematics/.
 
   HARDWARE IMPLEMENTATION PARAMETERS
   - Exact receiver protocol/channel mapping, controller pin assignments,
