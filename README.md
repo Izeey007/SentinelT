@@ -14,8 +14,9 @@ The design combines a compact armored chassis, protected drive layout, sloped ex
 | Requirement | SentinelT Status |
 |---|---|
 | Maximum footprint | **PASS - 318.16 mm x 495.00 mm** |
-| CAD height | **255.41 mm** |
+| Current CAD height | **405.99 mm** |
 | Footprint verification | **180/180 frames PASS** |
+| Failed footprint frames | **0** |
 | Mass limit | Strictly below **5.000 kg** |
 | Engineering mass budget | **4.650 kg** |
 | Design margin | **0.350 kg** |
@@ -53,9 +54,16 @@ SentinelT/
 
 ## Mechanical Design Evidence
 
-The Blender CAD model is stored in `Designs/Mechanical_Design/CAD/`. Front, side, top and isometric renders are stored in `Designs/Mechanical_Design/Renders/`.
+The Blender CAD model is stored in `Designs/Mechanical_Design/CAD/`. Mechanical renders and technical packaging views are stored in `Designs/Mechanical_Design/Renders/`.
 
-I used Blender/Python dimensional auditing throughout development. The current verified CAD envelope is **318.16 mm x 495.00 mm x 255.41 mm**, with **0 failed frames out of 180 checked**.
+I used Blender/Python dimensional auditing throughout development. The current verified CAD envelope is **318.16 mm x 495.00 mm x 405.99 mm**, with **0 failed frames out of 180 checked**.
+
+The current digital package also includes:
+
+- an internal electronics and drivetrain packaging layout;
+- an exploded component-layout view with labelled hardware;
+- a SentinelT + 2.4 GHz transmitter presentation view;
+- a repeatable footprint-audit report.
 
 ## Control and Safety
 
@@ -80,7 +88,7 @@ The `Documentation/` folder contains:
 
 ## Project Status
 
-The external CAD geometry, dimensional simulation, control framework, safety architecture, current component plan and technical documentation are complete as a digital engineering package. The next CAD revision will add simplified internal component models, power wiring, the RC transmitter model, a cutaway view and an exploded internal-layout view.
+The CAD geometry, internal packaging concept, technical component views, dimensional simulation, control framework, safety architecture, current component plan and technical documentation are complete as a digital engineering package.
 
 Physical fabrication and testing remain separate implementation stages. Measured physical mass, actual current draw, thermal behaviour, drivetrain performance and E-Stop interruption performance will be verified only on the completed hardware.
 
