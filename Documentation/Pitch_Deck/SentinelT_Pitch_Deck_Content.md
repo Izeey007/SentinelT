@@ -12,7 +12,7 @@ Robo Wars RC Combat Robot; project ownership; hero CAD render; verified CAD enve
 HDPE chassis/armor, protected drivetrain, serviceable construction, commercial component plan and guarded auxiliary provision.
 
 ## Page 4 - Mechanical CAD & Verification
-318.16 mm x 495.00 mm x 255.41 mm; Blender/Python footprint audit; 180/180 frames PASS.
+318.16 mm x 495.00 mm x 405.99 mm; Blender/Python footprint audit; 180/180 frames PASS; 0 failed frames.
 
 ## Page 5 - Electronics, Control & Safety
 3S battery system; FlySky 2.4 GHz RC; dual brushed ESC; main isolation; E-Stop plus high-current relay/contactor; RC-loss safe state.
