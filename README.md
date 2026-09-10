@@ -5,7 +5,7 @@
 
 ## Project Summary
 
-SentinelT is a human-operated **2.4 GHz RC combat robot** developed around a compact armored chassis, protected drivetrain, serviceable internal electronics bay, hardware emergency isolation and guarded active mechanisms. I developed the mechanical CAD, dimensional-verification tools, control framework, safety architecture, component plan and technical documentation contained in this repository.
+SentinelT is a human-operated **2.4 GHz RC combat robot** developed around a compact armored chassis, protected four-wheel drivetrain, serviceable internal electronics bay, hardware emergency isolation and guarded active mechanisms. I developed the mechanical CAD, dimensional-verification tools, control framework, safety architecture, component plan and technical documentation contained in this repository.
 
 A fresh digital audit of the current submitted `SentinelT_Rob.blend` model checked **204 engineering mesh objects** across **Frames 0-180**. The measured digital envelope is approximately **316.10 mm x 466.11 mm x 405.99 mm**, with **0 failed frames** against the required **500 mm x 500 mm** maximum footprint.
 
@@ -64,11 +64,16 @@ Contains the complete mechanical, electronic, safety and simulation design packa
 Contains the formal SentinelT submission documents.
 
 - `Pitch_Deck/SentinelT_Pitch_Deck.pdf` - maximum-seven-page pitch deck.
-- `BOM/SentinelT_Bill_of_Materials.xlsx` - procurement/funding BOM with component, quantity, unit cost, supplier/model, buying URL and total cost information.
+- `BOM/SentinelT_Bill_of_Materials.xlsx` - complete funding/procurement BOM with component name, quantity, unit cost, supplier, stock code/model, direct buying/source URL and formula-driven totals.
+- `BOM/SentinelT_Bill_of_Materials_Funding.csv` - GitHub-readable mirror of the funding BOM.
 - `Holistic_Build_Document/SentinelT_Holistic_Build_Document.pdf` - comprehensive A4 report tying the build together.
 - `FQA_Attendance_Log.md` - records that no FQ&A attendance bonus is claimed.
 - `PROJECT_COMPLETENESS_CHECKLIST.md` - maps completed digital evidence and hardware-stage verification.
 - `README.md` - documentation-folder summary.
+
+### Funding / Procurement Total
+
+The submitted funding BOM includes the intended physical hardware and raw fabrication stock for the four-wheel drivetrain, 2.4 GHz RC system, control electronics, cutter, hammer/torso actuators, power isolation, E-Stop, protection, wiring, charging equipment and mechanical materials. The current formula-driven procurement total is **R15,985.04**. Supplier pricing and stock are to be reconfirmed when procurement is authorized.
 
 ## Robo Wars Requirements and SentinelT Response
 
@@ -77,7 +82,7 @@ Contains the formal SentinelT submission documents.
 | Maximum footprint | Current Blender audit: **316.10 mm x 466.11 mm**, 0 failed frames |
 | Weight | Physical design target **< 5 kg**; calibrated measurement during hardware implementation |
 | Control frequency | Human-operated **2.4 GHz RC** |
-| Main ON/OFF | Separate accessible battery-isolation function documented |
+| Main ON/OFF | Separate accessible battery-isolation function documented and budgeted |
 | Emergency Stop | Normally-closed E-Stop control loop de-energizing a separate high-current contactor/relay |
 | Restricted weapon types | No projectiles, flames or liquids |
 | Simulation | Blender CAD, mechanism animation and Python footprint verification |
@@ -88,7 +93,7 @@ SentinelT uses layered safety:
 
 1. Accessible main ON/OFF battery isolation.
 2. Main battery fuse/protection.
-3. Independent E-Stop low-current control loop.
+3. Independent E-Stop low-current normally-closed control loop.
 4. Separate high-current contactor/relay that removes actuator power when the E-Stop loop opens.
 5. Software `SAFE_DISABLED` state at startup/reset.
 6. RC-signal validation and timeout handling.
