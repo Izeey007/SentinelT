@@ -4,132 +4,81 @@
 **Category:** Robo Wars - RC Combat  
 **Project Developer:** TG Assegaai
 
-## Clear Vector Schematic
+## Annotated Circuit / Power Schematic
 
 ![SentinelT Power and E-Stop Architecture](./SentinelT_Power_Architecture.svg)
 
-## Safety Objective
+The schematic explicitly shows both mandatory safety functions: the accessible **MAIN ON/OFF isolator** and the **E-STOP**. The E-Stop is implemented in a low-current normally-closed control loop that commands a separate high-current contactor/relay stage.
 
-SentinelT uses two separate operator-accessible safety functions:
+## High-Current Power Path
 
-1. **MAIN ON/OFF SWITCH**
-2. **EMERGENCY STOP (E-STOP)**
-
-The E-Stop is intended to disable actuator power immediately and does not depend only on ordinary software commands.
-
-## Power Architecture
-
-```mermaid
-flowchart TD
-    BAT[11.1 V 3S Battery] --> FUSE[Branch Fuse / Protection]
-    FUSE --> SW[MAIN ON/OFF SWITCH]
-    SW --> ESTOP[E-STOP CONTROL + HIGH-CURRENT RELAY]
-    ESTOP --> PDB[100 A Power Distribution]
-
-    PDB --> CTRL[Control / Interface Logic]
-    PDB --> DRV[Dual Brushed Drive ESC]
-    PDB --> AUX[Guarded Active-Mechanism Controller]
-
-    RX[2.4 GHz RC Receiver] --> CTRL
-    CTRL --> DRV
-    CTRL --> AUX
-
-    DRV --> LM[Left 12 V Gearmotor]
-    DRV --> RM[Right 12 V Gearmotor]
-    AUX --> ACT[Guarded Active Mechanism]
+```text
+3S LiPo Battery
+    -> Main Fuse / Protection
+    -> Accessible MAIN ON/OFF Isolator
+    -> K1/K2 High-Current Contactor / Relay Contacts
+    -> Power Distribution
+         -> Drive Branch
+         -> Weapon / Auxiliary Branch
+         -> Control Branch
 ```
+
+The mushroom E-Stop pushbutton is **not** placed in series with the full traction/weapon current. Its role is to interrupt the low-current control circuit that keeps the high-current isolation device energized.
+
+## Low-Current E-Stop Control Loop
+
+```text
+Post-isolator low-current protected feed
+    -> Normally-Closed E-STOP contact
+    -> Safety / enable / watchdog logic
+    -> K1/K2 contactor coil
+```
+
+### E-Stop action
+
+When the E-Stop is pressed:
+
+1. the normally-closed E-Stop contact opens;
+2. the K1/K2 contactor coil de-energizes;
+3. the high-current contactor/relay contacts open;
+4. drive and weapon/auxiliary actuator power is removed;
+5. software also returns SentinelT to its disabled/safe state;
+6. normal operation resumes only after the safety condition is cleared and the robot is deliberately re-enabled.
+
+This arrangement means a software fault cannot by itself bypass the hardware emergency power-disable path.
 
 ## Main ON/OFF Switch
 
-The main ON/OFF switch provides primary electrical isolation for SentinelT.
+SentinelT includes a separate, clearly accessible main ON/OFF isolation function. The final physical switch/disconnect will be selected with a DC rating appropriate to the installed battery and actuator current. Switching OFF removes actuator power before servicing, inspection or battery disconnection.
 
-**Design requirements:**
+## 2.4 GHz RC and Failsafe Layer
 
-- clearly labelled;
-- easily accessible without chassis disassembly;
-- electrically rated for the final DC load path, or used to command a correctly rated disconnect device;
-- OFF state removes actuator power from the robot.
+SentinelT is human-operated using a **2.4 GHz RC link**. The receiver feeds command data to the control logic. Invalid/stale RC data, startup/reset, E-Stop activation or invalid commands force the software to a disabled state. This software safety layer supplements the hardware E-Stop and does not replace it.
 
-## Emergency Stop
+## Physical Hardware Implementation
 
-The E-Stop is a dedicated safety mechanism intended to bring the actuator system into a safe state immediately.
+The physical SentinelT build will follow the same electrical architecture and Robo Wars safety constraints documented here. During hardware implementation the following will be measured, selected or verified before operation:
 
-```mermaid
-flowchart LR
-    NORMAL[Robot Operating] --> TRIGGER[E-STOP ACTIVATED]
-    TRIGGER --> CUT[High-Current Power Path Disabled]
-    CUT --> DRIVE[Drive Motors OFF]
-    CUT --> AUX[Active Mechanism OFF]
-    DRIVE --> SAFE[Safe State]
-    AUX --> SAFE
-```
+- final main and branch fuse ratings;
+- DC rating of the main ON/OFF isolator;
+- continuous/interruption rating of K1/K2 contactor/relay hardware;
+- conductor gauge, connectors, insulation and strain relief;
+- receiver failsafe configuration;
+- measured current draw and voltage behavior;
+- E-Stop power-interruption performance;
+- deliberate restart/re-enable behavior after an E-Stop event.
 
-When activated:
-
-- drive actuation is disabled;
-- active-mechanism actuation is disabled;
-- SentinelT enters a safe state;
-- ordinary operation cannot resume until the safety condition is cleared and the system is intentionally re-enabled.
-
-> **Implementation note:** the mushroom-style E-Stop pushbutton is not assumed to interrupt full traction/auxiliary current directly. The current design uses it to control a separate high-current relay/contactor candidate. Final DC interruption ratings will be verified against the completed load system.
-
-## RC Signal Safety
-
-SentinelT uses a **2.4 GHz remote-control system**. Loss of a valid RC signal is treated as a safety event.
-
-```mermaid
-flowchart TD
-    A[Read 2.4 GHz RC Signal] --> B{Valid signal?}
-    B -->|Yes| C[Accept Operator Commands]
-    B -->|No| D[Disable Actuator Commands]
-    D --> E[Safe State]
-    C --> F{E-Stop active?}
-    F -->|Yes| D
-    F -->|No| G[Operate SentinelT]
-```
-
-## Startup Safety Sequence
-
-1. Confirm the robot is mechanically safe and restrained where required.
-2. Confirm the guarded active mechanism is disabled.
-3. Confirm the E-Stop is in the required safe/start condition.
-4. Switch the 2.4 GHz transmitter ON.
-5. Switch SentinelT main power ON.
-6. Verify a valid RC link.
-7. Verify low-command drive response.
-8. Enable auxiliary actuation only when permitted and safe.
-
-## Shutdown Sequence
-
-1. Disable auxiliary actuation.
-2. Stop all drive motion.
-3. Activate isolation/E-Stop where required.
-4. Switch main robot power OFF.
-5. Disconnect the battery before servicing.
+These hardware-dependent checks are not claimed as already measured. The implementation procedure is to preserve the verified digital design intent and remain within the applicable Robo Wars limits when the physical robot is fabricated.
 
 ## Robo Wars Safety Mapping
 
-| Requirement | SentinelT Implementation |
+| Requirement | SentinelT implementation |
 |---|---|
-| Main ON/OFF switch | Dedicated accessible power-isolation function |
-| Emergency Stop | Dedicated actuator-power-disable function |
-| RC frequency | 2.4 GHz |
-| RC signal loss | Safe-state / actuator-disable response |
-| Active mechanism safety | Separate enable/control path |
+| Main ON/OFF switch | Dedicated accessible battery-isolation function |
+| Emergency Stop | Normally-closed E-Stop control loop de-energizing a separate high-current contactor/relay |
+| RC frequency | Human-operated 2.4 GHz RC |
+| RC signal loss | Software safe-state / actuator-command disable |
+| Active mechanism safety | Separate power/control branch downstream of the isolation stage |
 | Projectiles | Not used |
 | Flames | Not used |
 | Liquids | Not used |
-
-## Final Physical Verification
-
-Before physical operation, the following will be locked and verified:
-
-- final active-mechanism motor/controller;
-- final main/branch protection ratings;
-- switch/disconnect and relay/contactor ratings;
-- wiring terminations and routing;
-- receiver failsafe configuration;
-- actual current draw and actuator loads;
-- physical E-Stop interruption performance.
-
-All high-current ratings will be verified against measured or manufacturer-specified loads before the completed robot is operated.
