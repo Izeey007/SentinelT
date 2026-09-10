@@ -11,76 +11,66 @@ This folder contains the formal SentinelT submission documents: the pitch deck, 
 
 Location: `Pitch_Deck/SentinelT_Pitch_Deck.pdf`
 
-The pitch deck is limited to 7 pages and covers:
+The pitch deck is limited to seven pages and covers SentinelT, Robo Wars design constraints, solution/buildability, CAD/simulation evidence, electronic control and safety, implementation cost, and Project Developer responsibilities.
 
-- SentinelT introduction and Robo Wars constraints;
-- solution and buildability;
-- mechanical CAD and simulation evidence;
-- electronic control, main ON/OFF and E-Stop safety;
-- engineering mass allocation and current component cost;
-- Project Developer responsibilities and signature.
-
-## 2. Bill of Materials
+## 2. Bill of Materials / Funding Procurement List
 
 Location: `BOM/SentinelT_Bill_of_Materials.xlsx`
 
-The spreadsheet contains the required purchasing fields:
+Supporting readable procurement files are also stored in `BOM/` so the funding list can be inspected directly from GitHub.
 
-- Component Name;
-- Quantity;
-- Cost per Unit;
-- Supplier;
-- Supplier Stock Code;
-- Direct URL;
-- line and total cost information.
+The revised procurement plan covers the complete intended hardware set rather than only the earlier partial component list. It includes:
 
-The current priced component subtotal is **R8,039.15**. Hardware-dependent procurement lines that are not yet physically locked are identified as such rather than represented as completed purchases.
+- raw 6 mm HDPE and mild-steel fabrication stock;
+- four 12 V drive gearmotors and four wheels;
+- independent left/right Cytron MDD20A drive control;
+- 3S robot battery and power wiring;
+- RadioMaster Boxer 2.4 GHz transmitter, receiver and transmitter battery;
+- embedded controller/interface hardware;
+- cutter motor and controller candidate;
+- two hammer actuators plus torso-rotation actuator;
+- servo interface and control wiring;
+- main ON/OFF isolator;
+- normally-closed E-Stop control switch;
+- separate high-current actuator-isolation relay/contactor candidate;
+- fuse protection, XT60 connectors and insulation;
+- fastening, telemetry/status and battery-restraint hardware;
+- LiPo charging equipment.
+
+The current revised funding total is **R15,985.04**. Supplier prices were checked during September 2026 and must be reconfirmed when purchasing because stock and pricing can change. Every funded hardware line identifies a supplier/model or stock code and a buying/source link in the procurement list.
+
+The procurement plan corrects the earlier drivetrain mismatch: SentinelT now budgets **four 12 V 160 RPM 37 mm motors**, with two motors per side controlled by the independent channels of a **Cytron MDD20A**. The previous linked-output WP-880 concept is not used as the final differential-drive funding architecture.
 
 ## 3. Holistic Build Document
 
 Location: `Holistic_Build_Document/SentinelT_Holistic_Build_Document.pdf`
 
-This A4 portrait report ties SentinelT together as one technical build. Its title header identifies **SentinelT** and **Project Developer: TG Assegaai**, and the report ends with **Signature: Thato Glen Assegaai**.
+The A4 report ties SentinelT together as a single technical build and covers the Robo Wars constraints, solution overview, mechanical design, electronics, E-Stop integration, programming framework, simulation, mass planning and BOM summary.
 
-The report includes:
-
-1. Context and Robo Wars design constraints.
-2. Solution overview describing what SentinelT is and how it is being built.
-3. Mechanical design and fabrication approach.
-4. Internal packaging/buildability evidence.
-5. Electronic design and component choices.
-6. Wiring and mandatory E-Stop integration.
-7. Programming language, framework and operating logic.
-8. Simulation and footprint verification.
-9. Engineering mass budget.
-10. BOM summary.
-11. Current implementation status and physical-verification plan.
-
-Recorded digital result: **318.16 mm x 495.00 mm x 405.99 mm**, **204 physical meshes**, **180/180 frames PASS**, **0 failed frames** for the documented audit baseline.
+A fresh footprint audit of the current submitted Blender model records approximately **316.10 mm x 466.11 mm x 405.99 mm**, with **204 engineering mesh objects**, Frames **0-180**, and **0 failed footprint frames** against the 500 mm x 500 mm limit.
 
 ## 4. Project Completeness Checklist
 
 Location: `PROJECT_COMPLETENESS_CHECKLIST.md`
 
-The checklist maps the submission against the scoring areas and clearly separates completed digital evidence from tests that require the fabricated robot. Unchecked hardware items are marked for verification after hardware implementation.
+The checklist separates completed digital evidence from tests that require the fabricated robot. Hardware-stage items remain explicitly scheduled for implementation and testing rather than being represented as already measured.
 
 ## 5. FQ&A Attendance
 
-`FQA_Attendance_Log.md` records that no Facilitator Q&A session was attended. Therefore:
+`FQA_Attendance_Log.md` records that no Facilitator Q&A session was attended. No FQ&A bonus or attendance screenshot is claimed.
 
-- no FQ&A attendance bonus is claimed;
-- no attendance screenshot is fabricated;
-- `FQA_Proof/` is intentionally reserved without attendance images.
+## Physical Hardware Implementation Statement
 
-## Physical Verification Status
+The physical SentinelT build will follow the same CAD packaging, 2.4 GHz RC architecture, power isolation, E-Stop arrangement and mechanism intent documented in this repository. Physical verification will be completed during hardware implementation, including:
 
-The formal documentation distinguishes digital results from hardware results. The following remain physically unverified and will be checked after hardware implementation:
+- calibrated robot mass measurement, with the completed robot kept **strictly below 5 kg**;
+- final overall footprint within **500 mm x 500 mm**;
+- main ON/OFF accessibility and isolation;
+- E-Stop actuator-power interruption;
+- receiver binding, channel mapping and failsafe behavior;
+- drivetrain direction, current and thermal behavior;
+- final fuse, relay/contactor, connector and wire ratings;
+- battery restraint, insulation and runtime;
+- mechanism clearance, guard and fastener inspection.
 
-- measured robot mass;
-- measured current draw;
-- battery runtime;
-- drivetrain performance;
-- thermal behavior;
-- final receiver/ESC calibration;
-- final cable routing and strain relief;
-- physical E-Stop interruption performance.
+If a physical measurement differs from a digital assumption, the hardware will be adjusted before operation until the applicable Robo Wars constraints are met.
