@@ -1,13 +1,17 @@
 SENTINELT FOOTPRINT AUDIT
 ==========================
 
-Frames audited: 1-180
-Physical mesh objects: 204
+Model: SentinelT_Rob.blend
+Frames audited: 0-180
+Physical engineering mesh objects: 204
 
-Maximum X: 318.16 mm (frame 1)
-Maximum Y: 495.00 mm (frame 1)
+Maximum X: 316.10 mm
+Maximum Y: 466.11 mm
 Maximum Z: 405.99 mm
 
+Footprint limit: 500.00 mm x 500.00 mm
 Failed frames: 0
 
-RESULT: PASS - 180/180 FRAMES
+RESULT: PASS - ALL AUDITED FRAMES WITHIN 500 mm x 500 mm
+
+This is a digital Blender geometry audit of the current submitted model. Physical weight, electrical performance, actuator loads and fabrication tolerances will be verified during hardware implementation. The physical build is intended to follow the same Robo Wars dimensional and safety constraints documented in the repository.
