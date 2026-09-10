@@ -1,61 +1,96 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="900" height="1200" viewBox="0 0 900 1200">
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1050" viewBox="0 0 1200 1050">
   <defs>
     <marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="#222"/></marker>
   </defs>
   <style>
     text { font-family: Arial, sans-serif; fill:#202020; }
-    .title { font-size:30px; font-weight:700; }
-    .box { fill:#fafafa; stroke:#222; stroke-width:2; }
-    .safe { fill:#fff5f5; stroke:#991b1b; stroke-width:2.5; }
-    .line { stroke:#222; stroke-width:2.5; fill:none; marker-end:url(#arrow); }
+    .title { font-size:34px; font-weight:700; }
+    .box { fill:#fafafa; stroke:#222; stroke-width:2.4; }
+    .safe { fill:#fff5f5; stroke:#991b1b; stroke-width:3; }
+    .ctrl { fill:#f3f7ff; stroke:#1f4b99; stroke-width:2.4; }
+    .line { stroke:#222; stroke-width:3; fill:none; marker-end:url(#arrow); }
+    .controlLine { stroke:#991b1b; stroke-width:3; fill:none; stroke-dasharray:10 7; marker-end:url(#arrow); }
+    .signalLine { stroke:#1f4b99; stroke-width:3; fill:none; stroke-dasharray:8 6; marker-end:url(#arrow); }
     .bold { font-weight:700; }
   </style>
-  <rect width="900" height="1200" fill="white"/>
-  <text x="40" y="55" class="title">SentinelT Power &amp; E-Stop Architecture</text>
-  <text x="40" y="82" font-size="14" fill="#666">2.4 GHz RC | Main ON/OFF | Independent emergency power-disable path</text>
+  <rect width="1200" height="1050" fill="white"/>
+  <text x="50" y="58" class="title">SentinelT Power, ON/OFF &amp; E-Stop Schematic</text>
+  <text x="50" y="90" font-size="16" fill="#666">High-current actuator path is separated from the low-current E-Stop control loop.</text>
 
-  <rect x="190" y="115" rx="12" width="520" height="92" class="box"/>
-  <text x="450" y="153" text-anchor="middle" font-size="20" class="bold">3S LiPo Battery</text>
-  <text x="450" y="180" text-anchor="middle" font-size="13">Primary energy source</text>
+  <text x="70" y="145" font-size="22" class="bold">HIGH-CURRENT POWER PATH</text>
 
-  <rect x="190" y="260" rx="12" width="520" height="92" class="box"/>
-  <text x="450" y="298" text-anchor="middle" font-size="20" class="bold">Main Fuse / Protection</text>
-  <text x="450" y="325" text-anchor="middle" font-size="13">High-current battery protection</text>
+  <rect x="70" y="185" rx="12" width="180" height="90" class="box"/>
+  <text x="160" y="220" text-anchor="middle" font-size="20" class="bold">3S LiPo</text>
+  <text x="160" y="248" text-anchor="middle" font-size="14">Battery</text>
 
-  <rect x="190" y="405" rx="12" width="520" height="92" class="box"/>
-  <text x="450" y="443" text-anchor="middle" font-size="20" class="bold">MAIN ON/OFF ISOLATOR</text>
-  <text x="450" y="470" text-anchor="middle" font-size="13">Accessible primary robot power isolation</text>
+  <rect x="300" y="185" rx="12" width="180" height="90" class="box"/>
+  <text x="390" y="220" text-anchor="middle" font-size="19" class="bold">Main Fuse</text>
+  <text x="390" y="248" text-anchor="middle" font-size="14">Battery protection</text>
 
-  <rect x="190" y="550" rx="12" width="520" height="92" class="safe"/>
-  <text x="450" y="588" text-anchor="middle" font-size="20" class="bold" fill="#991b1b">E-STOP PUSHBUTTON</text>
-  <text x="450" y="615" text-anchor="middle" font-size="13">Operator emergency command input</text>
+  <rect x="530" y="185" rx="12" width="190" height="90" class="box"/>
+  <text x="625" y="217" text-anchor="middle" font-size="18" class="bold">MAIN ON/OFF</text>
+  <text x="625" y="245" text-anchor="middle" font-size="14">Accessible isolator</text>
 
-  <rect x="190" y="695" rx="12" width="520" height="92" class="safe"/>
-  <text x="450" y="733" text-anchor="middle" font-size="20" class="bold" fill="#991b1b">HIGH-CURRENT RELAY / CONTACTOR</text>
-  <text x="450" y="760" text-anchor="middle" font-size="13">Interrupts actuator power when E-Stop is activated</text>
+  <rect x="770" y="185" rx="12" width="210" height="90" class="safe"/>
+  <text x="875" y="217" text-anchor="middle" font-size="18" class="bold">K1/K2 CONTACTOR</text>
+  <text x="875" y="245" text-anchor="middle" font-size="14">High-current isolation</text>
 
-  <rect x="190" y="840" rx="12" width="520" height="92" class="box"/>
-  <text x="450" y="878" text-anchor="middle" font-size="20" class="bold">POWER DISTRIBUTION</text>
-  <text x="450" y="905" text-anchor="middle" font-size="13">Feeds drive, control and auxiliary branches</text>
+  <rect x="1030" y="185" rx="12" width="120" height="90" class="box"/>
+  <text x="1090" y="216" text-anchor="middle" font-size="17" class="bold">PDB</text>
+  <text x="1090" y="244" text-anchor="middle" font-size="13">Distribution</text>
 
-  <path d="M450 207 L450 255" class="line"/>
-  <path d="M450 352 L450 400" class="line"/>
-  <path d="M450 497 L450 545" class="line"/>
-  <path d="M450 642 L450 690" class="line"/>
-  <path d="M450 787 L450 835" class="line"/>
+  <path d="M250 230 L290 230" class="line"/>
+  <path d="M480 230 L520 230" class="line"/>
+  <path d="M720 230 L760 230" class="line"/>
+  <path d="M980 230 L1020 230" class="line"/>
 
-  <rect x="65" y="995" rx="10" width="220" height="90" class="box"/>
-  <text x="175" y="1033" text-anchor="middle" font-size="18" class="bold">DRIVE BRANCH</text>
-  <text x="175" y="1060" text-anchor="middle" font-size="12">Dual brushed ESC -&gt; motors</text>
+  <rect x="780" y="345" rx="12" width="170" height="82" class="box"/>
+  <text x="865" y="378" text-anchor="middle" font-size="17" class="bold">DRIVE BRANCH</text>
+  <text x="865" y="403" text-anchor="middle" font-size="13">Motor driver → wheels</text>
 
-  <rect x="615" y="995" rx="10" width="220" height="90" class="box"/>
-  <text x="725" y="1033" text-anchor="middle" font-size="18" class="bold">CONTROL BRANCH</text>
-  <text x="725" y="1060" text-anchor="middle" font-size="12">2.4 GHz RC + safe-state logic</text>
+  <rect x="980" y="345" rx="12" width="170" height="82" class="box"/>
+  <text x="1065" y="378" text-anchor="middle" font-size="17" class="bold">WEAPON / AUX</text>
+  <text x="1065" y="403" text-anchor="middle" font-size="13">Actuator controllers</text>
 
-  <rect x="340" y="1095" rx="10" width="220" height="70" class="box"/>
-  <text x="450" y="1138" text-anchor="middle" font-size="18" class="bold">AUXILIARY BRANCH</text>
+  <path d="M1090 275 L1090 320 L865 320 L865 335" class="line"/>
+  <path d="M1090 320 L1065 320 L1065 335" class="line"/>
 
-  <path d="M450 932 L450 960 L175 960 L175 990" class="line"/>
-  <path d="M450 960 L725 960 L725 990" class="line"/>
-  <path d="M450 960 L450 1090" class="line"/>
+  <text x="70" y="520" font-size="22" class="bold">LOW-CURRENT E-STOP CONTROL LOOP</text>
+
+  <rect x="70" y="560" rx="12" width="220" height="95" class="ctrl"/>
+  <text x="180" y="595" text-anchor="middle" font-size="18" class="bold">Post-isolator control feed</text>
+  <text x="180" y="623" text-anchor="middle" font-size="13">Low-current protected branch</text>
+
+  <rect x="345" y="560" rx="12" width="220" height="95" class="safe"/>
+  <text x="455" y="592" text-anchor="middle" font-size="18" class="bold">E-STOP</text>
+  <text x="455" y="620" text-anchor="middle" font-size="13">Normally-closed control contact</text>
+
+  <rect x="620" y="560" rx="12" width="220" height="95" class="ctrl"/>
+  <text x="730" y="592" text-anchor="middle" font-size="18" class="bold">Safety / enable logic</text>
+  <text x="730" y="620" text-anchor="middle" font-size="13">Watchdog / deliberate re-enable</text>
+
+  <rect x="895" y="560" rx="12" width="220" height="95" class="safe"/>
+  <text x="1005" y="592" text-anchor="middle" font-size="18" class="bold">K1/K2 COIL</text>
+  <text x="1005" y="620" text-anchor="middle" font-size="13">Energized only when safe</text>
+
+  <path d="M290 608 L335 608" class="controlLine"/>
+  <path d="M565 608 L610 608" class="controlLine"/>
+  <path d="M840 608 L885 608" class="controlLine"/>
+  <path d="M1005 560 L1005 500 L875 500 L875 285" class="controlLine"/>
+
+  <rect x="70" y="745" rx="12" width="230" height="90" class="ctrl"/>
+  <text x="185" y="780" text-anchor="middle" font-size="18" class="bold">2.4 GHz RC Receiver</text>
+  <text x="185" y="808" text-anchor="middle" font-size="13">Operator command input</text>
+
+  <rect x="365" y="745" rx="12" width="230" height="90" class="ctrl"/>
+  <text x="480" y="780" text-anchor="middle" font-size="18" class="bold">MCU / Control Logic</text>
+  <text x="480" y="808" text-anchor="middle" font-size="13">Failsafe + command validation</text>
+
+  <path d="M300 790 L355 790" class="signalLine"/>
+  <path d="M595 790 L730 790 L730 665" class="signalLine"/>
+
+  <text x="70" y="910" font-size="17" class="bold">Emergency action:</text>
+  <text x="225" y="910" font-size="17">Pressing the E-Stop opens the low-current NC loop → K1/K2 coil de-energizes → high-current actuator power is removed.</text>
+  <text x="70" y="945" font-size="15">The E-Stop pushbutton is not used as the full traction/weapon current path. The main ON/OFF isolator remains a separate accessible power-control device.</text>
+  <text x="70" y="980" font-size="15">Physical ratings, wiring gauge, fuse value and interruption performance will be verified during hardware implementation using the same documented safety architecture.</text>
 </svg>
