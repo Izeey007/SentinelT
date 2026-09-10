@@ -1,0 +1,6 @@
+SentinelT funding BOM total: R15,985.04
+Prices checked: September 2026
+
+This total covers the revised physical implementation funding list, including raw HDPE/mild steel, four-wheel drive hardware, independent left/right motor driver, 3S robot battery, 2.4 GHz RC equipment, controller/interface hardware, cutter motor/controller candidate, hammer/torso servos, main ON/OFF isolation, E-Stop and high-current isolation hardware, protection, wiring/connectors, fastening, telemetry/status components, battery restraint and charging equipment.
+
+Supplier pricing and stock must be reconfirmed when procurement is authorized.
