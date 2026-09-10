@@ -1,0 +1,37 @@
+Component Name,Quantity,Cost per Unit (ZAR),Supplier,Supplier Stock Code,Direct URL / Link,Line Total (ZAR),System / Purpose
+HDPE Sheet 6mm 2000x1000mm,1,1943.50,Plastic World,"HDPNAT06,0X20001000",https://plasticworld.co.za/shop/hdpe-sheet-6mm/,1943.50,Chassis / armor
+Mild Steel Flat Bar 60x6mm x6m,1,393.14,BUCO / Macsteel,1074220,https://www.buco.co.za/flat-bar-mild-steel-60x6-0mm-6-0m-1074220,393.14,Weapon / structural metal
+Mild Steel Flat Bar 20x3mm x6m,1,72.99,BUCO,1074215,https://www.buco.co.za/flat-bar-mild-steel-20x3-0mm-x-6-0m-1074215,72.99,Brackets / guards
+12V 160RPM 37mm Spur Gearmotor,4,182.85,Micro Robotics,GB37-500-160-12V,https://www.robotics.org.za/GB37-500-160-12V,731.40,Drive
+37mm Gearmotor Mount,4,44.85,Micro Robotics,LIY-BRA37,https://www.robotics.org.za/LIY-BRA37,179.40,Drive mounting
+125mm All-Terrain Wheels pack of 2,2,239.00,Communica,BMT WHEELS X2 ALL TERRAIN CHROME,https://www.communica.co.za/products/bmt-wheels-x2-all-terrain-chrome,478.00,Drive
+Cytron Dual Motor Driver 20A 6-30V,1,779.70,Micro Robotics,MDD20A,https://www.robotics.org.za/MDD20A,779.70,Independent left/right drive
+3S 11.1V 5000mAh LiPo Battery XT60,1,950.00,Scale RC,BEAT-LIPO-5000-3S,https://scalerc.co.za/products/beat-lipo-5000mah-11-1v-3s-100c-lipo-battery-xt60-connector,950.00,Robot power
+RadioMaster Boxer 2.4GHz ELRS Transmitter,1,4999.00,Flying Robot,BOXER ELRS,https://flyingrobot.co/products/radiomaster-boxer-radio-controller-2-4ghz,4999.00,2.4GHz RC
+RadioMaster ER4 2.4GHz ELRS PWM Receiver,1,579.00,Flying Robot,ER4,https://flyingrobot.co/products/er4-2-4ghz-elrs-pwm-receiver,579.00,2.4GHz RC receiver
+RadioMaster 6200mAh 2S Transmitter Battery,1,879.00,Flying Robot,RMA064 / 6200mAh 2S Boxer,https://flyingrobot.co/products/radiomaster-6200mah-2s-lipo-transmitter-battery-for-tx16s-and-boxer,879.00,Transmitter power
+Raspberry Pi Pico 2W,1,158.70,Micro Robotics,PICO-2W,https://www.robotics.org.za/PICO-2W,158.70,Control / interface
+Waveshare ST3215 Serial Bus Servo 30kg.cm,3,539.35,Micro Robotics,W22414,https://www.robotics.org.za/W22414,1618.05,Hammer x2 + torso rotation
+Waveshare ST/SC Serial Bus Servo Driver,1,102.35,Micro Robotics,W25514,https://www.robotics.org.za/motors-controllers/W25514,102.35,Servo interface
+Servo Wire Extension Kit 4 leads,2,20.70,Micro Robotics,SERVO-KIT,https://www.robotics.org.za/SERVO-KIT,41.40,Control wiring
+12V 4100RPM 775 Brushed DC Motor 5mm shaft,1,331.35,Mantech,ME101116 / CHR-S775,https://www.mantech.co.za/ProductInfo.aspx?Item=ME101116,331.35,Cutter drive motor
+BTS7960 43A H-Bridge Motor Driver,1,102.35,Micro Robotics,BTS7960,https://www.robotics.org.za/BTS7960,102.35,Cutter motor controller
+625ZZ Bearings 5x16x5mm pack of 4,1,25.30,Micro Robotics,625ZZ,https://www.robotics.org.za/625ZZ,25.30,Cutter rotating assembly
+6mm Shaft Collar pack of 2,2,51.75,Micro Robotics,LM-SC006,https://www.robotics.org.za/LM-SC006,103.50,Shaft retention
+Battery Isolator Switch 12V 100A,1,120.70,AutoMarine,SW101,https://www.automarine.co.za/battery-isolator-switches/5545-battery-isolator-switch-12-volt-100-amp.html,120.70,Mandatory main ON/OFF
+Emergency Stop Mushroom Switch,1,128.80,Micro Robotics,FIT0156,https://www.robotics.org.za/FIT0156,128.80,Mandatory E-Stop
+12V 80A Power Relay / Contactor Candidate,1,102.52,RS South Africa,915-6679 / DG85C-7021-76-1012-R,https://za.rs-online.com/web/p/power-relays/9156679,102.52,E-Stop high-current isolation
+30A 32V Blade Fuse Holder,1,28.75,Communica,CQ211K MOD,https://www.communica.co.za/products/cq211k-mod,28.75,Protection
+30A 32V Blade Fuse,3,3.28,Communica,30A BLADE FUSE,https://www.communica.co.za/products/30a-blade-fuse,9.84,Protection + spares
+XT60 Connector Pair 60A,3,34.50,Communica,RC-XT60 CONNECTOR PAIR,https://www.communica.co.za/products/rc-xt60-connector-pair,103.50,Power connectors
+XT60 Battery Connector Kit 12AWG 30cm,2,125.35,Micro Robotics,XT60-12AWG-30CM,https://www.robotics.org.za/power-battery-solar/battery-connectors,250.70,Main power wiring
+Buck Regulator 6-24V to 5V 2A,1,55.20,Micro Robotics,CHR-624-2A,https://www.robotics.org.za/index.php?page=14&path=173&route=product%2Fcategory,55.20,5V control power
+Heatshrink Kit Black & Red 7mm,1,12.65,Micro Robotics,HS07RB-KIT,https://www.robotics.org.za/HS07RB-KIT,12.65,Electrical insulation
+M3 Nut/Bolt/Spacer Kit 20 pack,2,25.30,Micro Robotics,M3-L6-KIT,https://www.robotics.org.za/M3-L6-KIT,50.60,Electronics fastening
+M3 x10mm Countersunk Self-Tapping Screws 20 pack,2,5.75,Micro Robotics,M3-L10-ST,https://www.robotics.org.za/index.php?page=48&path=173&route=product%2Fcategory,11.50,Panel fastening
+LM35 Gravity Temperature Sensor,1,74.75,Micro Robotics,DFR0023,https://www.robotics.org.za/DFR0023,74.75,Telemetry / health
+5V Active Buzzer 4 pack,1,18.40,Micro Robotics,BUZ-50V-PCB,https://www.robotics.org.za/BUZ-50V-PCB,18.40,Warning indication
+EVPEAK E3 LiPo Charger 220V,1,450.00,Smitties Hobbies,EVPEAK E3,https://www.smittieshobbies.com/batteries-chargers,450.00,Ground charging equipment
+XT60 Charger Cable,1,69.00,Smitties Hobbies,XT60 CHARGER CABLE,https://www.smittieshobbies.com/batteries-chargers,69.00,Ground charging equipment
+Battery Strap 20x200mm pack of 2,1,30.00,Smitties Hobbies,BATTERY STRAP 20x200 2PKT,https://www.smittieshobbies.com/li-po-and-li-fe-batteries,30.00,Battery restraint
+TOTAL PROCUREMENT COST,,,,,,15985.04,
