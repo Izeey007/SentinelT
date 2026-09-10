@@ -3,7 +3,7 @@
 **Project Developer:** TG Assegaai  
 **Category:** Robo Wars - RC Combat
 
-This checklist separates completed digital evidence from items that require fabricated hardware. Unchecked hardware items will be verified after hardware implementation; they are not claimed as already tested.
+This checklist separates completed digital evidence from checks that require the fabricated robot. Hardware-stage items will be measured and verified during implementation and are not represented as already physically tested.
 
 ## Repository Structure & README - 10 Points
 
@@ -25,9 +25,9 @@ This checklist separates completed digital evidence from items that require fabr
 - [x] Auxiliary default-OFF logic documented.
 - [x] High-resolution control flowchart included in SVG and PNG form.
 - [x] Firmware/control framework included.
-- [ ] Exact receiver protocol/channel mapping - **will be verified after hardware implementation**.
-- [ ] Final microcontroller pin mapping - **will be verified after hardware implementation**.
-- [ ] ESC calibration/end-points - **will be verified after hardware implementation**.
+- [ ] Exact receiver protocol/channel mapping - **completed during hardware implementation**.
+- [ ] Final controller pin mapping - **completed during hardware implementation**.
+- [ ] Motor-driver calibration/end-points - **completed during hardware implementation**.
 
 ## Folder B - Designs - 40 Points
 
@@ -35,58 +35,65 @@ This checklist separates completed digital evidence from items that require fabr
 
 - [x] Canonical Blender CAD model included as `B_Designs/Mechanical_Design/CAD/SentinelT_Rob.blend`.
 - [x] Front, side, top and isometric CAD renders included.
+- [x] Physical-implementation concept illustration included.
 - [x] 2.4 GHz remote presentation evidence included.
-- [x] Internal component-layout evidence included under Electronic Design pictures.
-- [x] Exploded component-layout evidence included under Electronic Design pictures.
-- [x] Fabrication material/fastening method documented.
-- [x] Recorded digital baseline is 318.16 mm x 495.00 mm.
-- [x] Recorded footprint audit is 180/180 frames PASS with 0 failed frames.
-- [x] Blender model includes judge/reviewer controls for wheel drive, cutter, hammer motion and upper-body rotation.
-- [ ] Post-animation footprint re-audit - **required only if the final animation/geometry is changed again before fabrication**.
+- [x] Internal component-layout evidence included.
+- [x] Exploded component-layout evidence included.
+- [x] Fabrication material/fastening intent documented.
+- [x] Fresh current-model footprint audit completed.
+- [x] Current digital envelope approximately **316.10 mm x 466.11 mm x 405.99 mm**.
+- [x] 204 engineering meshes checked across Frames 0-180 with **0 failed footprint frames**.
+- [x] Blender model includes reviewer controls for wheel drive, cutter, hammer motion and upper-body rotation.
 
 ### Electronic Design
 
 - [x] Dedicated `Electronic_Design.pdf` included.
-- [x] Power/circuit schematic picture included.
-- [x] Internal wiring/component-layout picture included.
+- [x] Power/circuit architecture evidence included.
+- [x] Internal wiring/component-layout evidence included.
 - [x] Main ON/OFF isolation explicitly documented.
 - [x] Mandatory E-Stop integration explicitly documented and pictured.
-- [x] Separate high-current relay/contactor isolation concept documented.
-- [ ] Final fuse/contactor/wire-current validation - **will be verified after hardware implementation**.
+- [x] E-Stop corrected to a **low-current normally-closed control loop** that de-energizes a **separate high-current contactor/relay**.
+- [x] High-current actuator path is separated from the E-Stop pushbutton control circuit.
+- [ ] Final fuse, contactor/relay and wire-current ratings - **verified during hardware implementation**.
 
 ### Simulation / Technical Excellence
 
 - [x] Blender/Python footprint simulation included.
-- [x] Audit report records 204 physical meshes, 180 frames, 0 failures for the documented baseline.
-- [x] Engineering mass-budget script included.
-- [ ] Physical scale mass measurement - **will be verified after hardware implementation**.
+- [x] Current audit records 204 engineering meshes and 0 failed frames.
+- [x] Engineering mass-planning tool included.
+- [x] Mechanism animation and control guide included.
+- [ ] Calibrated physical mass measurement - **verified during hardware implementation; completed robot must remain below 5 kg**.
 
 ## Folder C - Documentation - 30 Points
 
-- [x] 7-page A4 portrait `SentinelT_Pitch_Deck.pdf` included.
+- [x] 7-page maximum `SentinelT_Pitch_Deck.pdf` included.
 - [x] `SentinelT_Bill_of_Materials.xlsx` included.
 - [x] A4 portrait `SentinelT_Holistic_Build_Document.pdf` included.
 - [x] Holistic report includes title header, Robo Wars constraints and solution overview.
 - [x] Holistic report includes mechanical, electronic and programming sections with visual evidence.
 - [x] Holistic report includes BOM summary and implementation status.
-- [x] Project Developer and signature included in formal reports.
-- [ ] Final active-mechanism motor/controller procurement line - **will be finalized after hardware matching**.
-- [ ] Final physical implementation cost - **will be verified after hardware implementation**.
+- [x] Project Developer and signature are included in formal documentation.
+- [ ] Final physical measurements and hardware test results - **recorded during hardware implementation**.
 
 ## FQ&A Bonus
 
 - [ ] FQ&A attendance bonus - **not claimed; no Facilitator Q&A session was attended**.
 - [ ] Attendance screenshots - **not available because no FQ&A session was attended**.
 
-## Physical Verification Remaining
+## Physical Hardware Implementation Verification
 
-The following checks require the actual built robot and will be completed after hardware implementation:
+The physical SentinelT build will follow the same CAD packaging, circuit architecture, control method and safety intent documented in the digital submission. Before operation, the following will be measured or verified:
 
-- [ ] calibrated physical mass measurement;
-- [ ] E-Stop power-interruption test;
-- [ ] RC signal-loss/failsafe bench test;
-- [ ] drivetrain direction and response test;
-- [ ] motor/ESC current and thermal test;
-- [ ] battery runtime and voltage-under-load test;
-- [ ] final fastener/guard inspection;
-- [ ] final wiring, strain-relief and insulation inspection.
+- [ ] completed robot mass is strictly below 5 kg;
+- [ ] completed robot footprint remains within 500 mm x 500 mm;
+- [ ] main ON/OFF switch is accessible and correctly isolates the robot;
+- [ ] E-Stop de-energizes the high-current actuator isolation stage;
+- [ ] 2.4 GHz RC link and signal-loss/failsafe behavior are verified;
+- [ ] motor direction and response are verified;
+- [ ] final fuse, contactor/relay, wire and connector ratings match measured loads;
+- [ ] motor/driver current and thermal behavior are tested;
+- [ ] battery runtime and voltage-under-load are checked;
+- [ ] battery restraint, insulation, guards, fasteners and strain relief are inspected;
+- [ ] mechanism clearances are confirmed through the required motion range.
+
+If a physical measurement differs from a digital assumption, the hardware build will be adjusted before operation until the applicable Robo Wars constraints are satisfied.
