@@ -3,15 +3,23 @@
 **Entrant:** TG Assegaai  
 **Project:** SentinelT  
 **Category:** Robo Wars - Remote Control Combat Robot  
-**Procurement purpose:** Complete component and material list for final physical construction.
+**Maximum competition mass:** **5.0 kg fully assembled**
 
-Prices are based on the current procurement research and planning allowances. Supplier prices, stock and delivery must be reconfirmed before ordering.
+This document lists the components, raw materials, fastening hardware, electrical hardware and consumables required for the complete physical SentinelT build. Fabrication equipment and workshop tools are excluded from the procurement list.
 
-## TUT Workshop Support
+## Included physical systems
 
-TUT laboratory facilities will provide the required workshop access, including cutting, drilling, machining/mechanical work and available fabrication tools. These workshop services are therefore **not included as procurement costs** in this document.
+- Four-wheel differential drive
+- 2.4 GHz RC control
+- Main power isolation and emergency stop
+- One powered steel spinner/cutter assembly
+- Two hammer mechanisms
+- Powered upper-body/torso rotation
+- Steel pointed front impact part
+- Aluminium/HDPE chassis and armour
+- Complete structural fastening and service-panel hardware
 
-The procurement list covers the components, raw materials, fastening hardware, electrical hardware and consumables required to complete the robot.
+The procurement list contains **one powered spinner/cutter assembly**. The pointed front steel component is a separate impact feature, not a second powered spinner.
 
 ## A. Core Electrical, Drive and Control Components
 
@@ -28,7 +36,7 @@ The procurement list covers the components, raw materials, fastening hardware, e
 | A09 | Micro-USB data cable | 1 | R60.00 | [Amazon South Africa](https://www.amazon.co.za/s?k=micro+usb+data+cable) |
 | A10 | Servo/signal wire AWG26, 5m | 1 | R66.70 | [Micro Robotics](https://www.robotics.org.za/cables/SERVO-3P-26AWG) |
 | A11 | 2-pin screw terminal blocks, 10 pack | 1 | R16.10 | [Micro Robotics](https://www.robotics.org.za/KF301-2P) |
-| A12 | 12V 4100RPM 775 brushed DC cutter motor, 5mm shaft | 1 | R331.35 | [Mantech](https://www.mantech.co.za/ProductInfo.aspx?Item=ME101116) |
+| A12 | 12V 4100RPM 775 brushed DC spinner/cutter motor, 5mm shaft | 1 | R331.35 | [Mantech](https://www.mantech.co.za/ProductInfo.aspx?Item=ME101116) |
 | A13 | 625ZZ bearings 5x16x5mm, 4 pack | 1 | R25.30 | [Micro Robotics](https://www.robotics.org.za/625ZZ) |
 | A14 | 5mm shaft collar, 2 pack | 1 | R51.75 | [Micro Robotics](https://www.robotics.org.za/LM-SC005) |
 | A15 | 5mm-to-5mm shaft coupler | 1 | R19.55 | [Micro Robotics](https://www.robotics.org.za/CD0505) |
@@ -51,7 +59,7 @@ The procurement list covers the components, raw materials, fastening hardware, e
 
 **Core component subtotal: R7,380.10**
 
-## B. Chassis, Armour and Weapon Materials
+## B. Chassis, Armour, Spinner and Structural Hardware
 
 | ID | Material / Hardware | Qty | Total | Supplier |
 |---|---|---:|---:|---|
@@ -59,18 +67,21 @@ The procurement list covers the components, raw materials, fastening hardware, e
 | B02 | Approx. 2mm aluminium chassis plate/offcut | 1 set | R500.00 | [Metal Centre](https://www.metalcentre.co.za/) |
 | B03 | Aluminium angle/flat stiffeners | 1 lot | R200.00 | [Metal Centre](https://www.metalcentre.co.za/) |
 | B04 | Steel material for pointed front impact part | 1 | R250.00 | [All Steel Services](https://allsteel.co.za/) |
-| B05 | Steel blank for rear cutter | 1 | R300.00 | [Tubecon Laser](https://www.tubeconlaser.co.za/Products/Hardox) |
-| B06 | 5mm steel cutter shaft stock | 1 | R100.00 | [All Steel Services](https://allsteel.co.za/) |
-| B07 | Cutter bearing support and guard material | 1 set | R200.00 | [Metal Centre](https://www.metalcentre.co.za/) |
-| B08 | M4/M5 structural fasteners, nyloc nuts and washers | 1 lot | R250.00 | [Amazon South Africa](https://www.amazon.co.za/s?k=M4+M5+bolt+nyloc+washer+kit) |
-| B09 | Medium-strength threadlocker | 1 | R100.00 | [Amazon South Africa](https://www.amazon.co.za/s?k=blue+threadlocker) |
-| B10 | Cable grommets, P-clips and strain relief | 1 lot | R150.00 | [Takealot](https://www.takealot.com/rubber-grommet-sealing-gasket-rings-130pcs-6-50mm-0-2-2in/PLID98944420) |
-| B11 | Battery/electronics padding and insulation | 1 lot | R100.00 | [Amazon South Africa](https://www.amazon.co.za/s?k=closed+cell+foam+sheet) |
-| B12 | Mechanical transport lock / weapon-retention hardware | 1 set | R150.00 | [Amazon South Africa](https://www.amazon.co.za/s?k=locking+pin+quick+release) |
+| B05 | Steel blank for powered spinner/cutter | 1 | R300.00 | [Tubecon Laser](https://www.tubeconlaser.co.za/Products/Hardox) |
+| B06 | 5mm steel spinner/cutter shaft stock | 1 | R100.00 | [All Steel Services](https://allsteel.co.za/) |
+| B07 | Spinner/cutter bearing support and guard material | 1 set | R200.00 | [Metal Centre](https://www.metalcentre.co.za/) |
+| B08 | M4 machine bolts, washers and nyloc nuts | 1 set | R180.00 | [Amazon South Africa](https://www.amazon.co.za/s?k=M4+bolts+washers+nyloc+nuts) |
+| B09 | M5 high-tensile bolts, washers and nyloc nuts | 1 set | R220.00 | [Amazon South Africa](https://www.amazon.co.za/s?k=M5+high+tensile+bolts+nyloc+nuts) |
+| B10 | M6 high-tensile bolts, washers and nyloc nuts | 1 set | R220.00 | [Amazon South Africa](https://www.amazon.co.za/s?k=M6+high+tensile+bolts+nyloc+nuts) |
+| B11 | M4/M5 rivnuts or captive threaded inserts for removable panels | 1 set | R180.00 | [Amazon South Africa](https://www.amazon.co.za/s?k=M4+M5+rivnut+kit) |
+| B12 | Medium-strength threadlocker | 1 | R100.00 | [Amazon South Africa](https://www.amazon.co.za/s?k=blue+threadlocker) |
+| B13 | Cable grommets, P-clips and strain relief | 1 lot | R150.00 | [Takealot](https://www.takealot.com/rubber-grommet-sealing-gasket-rings-130pcs-6-50mm-0-2-2in/PLID98944420) |
+| B14 | Battery/electronics padding and insulation | 1 lot | R100.00 | [Amazon South Africa](https://www.amazon.co.za/s?k=closed+cell+foam+sheet) |
+| B15 | Mechanical transport lock / weapon-retention hardware | 1 set | R150.00 | [Amazon South Africa](https://www.amazon.co.za/s?k=locking+pin+quick+release) |
 
-**Chassis and material subtotal: R2,800.00**
+**Chassis, armour and structural hardware subtotal: R3,350.00**
 
-## C. Hammer and Torso Mechanism Components
+## C. Hammer and Upper-Body/Torso Mechanism Components
 
 | ID | Component | Qty | Total | Supplier |
 |---|---|---:|---:|---|
@@ -78,11 +89,23 @@ The procurement list covers the components, raw materials, fastening hardware, e
 | C02 | Waveshare ST/SC serial-bus servo driver | 1 | R102.35 | [Micro Robotics](https://www.robotics.org.za/W25514) |
 | C03 | Servo/signal wire AWG26, 5m | 1 | R66.70 | [Micro Robotics](https://www.robotics.org.za/cables/SERVO-3P-26AWG) |
 | C04 | Servo connector kit, 20 pack | 1 | R32.20 | [Micro Robotics](https://www.robotics.org.za/SERVO-M-20) |
-| C05 | Hammer/torso bracket and pivot material | 1 set | R250.00 | TUT workshop material/offcut allowance |
+| C05 | Hammer arm/head and torso bracket material | 1 set | R300.00 | [Metal Centre](https://www.metalcentre.co.za/) |
+| C06 | Hammer pivot shafts, bushings/bearings and retention hardware | 1 set | R200.00 | [RS South Africa](https://za.rs-online.com/) |
+| C07 | Upper-body/torso pivot bearing and support hardware | 1 set | R200.00 | [RS South Africa](https://za.rs-online.com/) |
 
-**Hammer and torso subtotal: R2,069.30**
+**Hammer and upper-body mechanism subtotal: R2,519.30**
 
-## D. Recommended Competition Spares
+## D. Assembly Method
+
+SentinelT will use a **bolted modular construction** so damaged panels and mechanisms can be removed and replaced during repairs.
+
+- Main chassis and structural armour joints: **M5/M6 through-bolts, large washers and nyloc nuts**
+- HDPE armour panels: **M5 through-bolts with washers and nyloc nuts**
+- Removable top/service panels: **M4 machine screws into rivnuts or captive threaded inserts**
+- Motor, hammer and spinner/cutter brackets: **M5/M6 high-tensile bolts with locking hardware**
+- Permanent welding is **not the primary assembly method**; it is reserved only for a specific metal subassembly if required by the final fabricated geometry.
+
+## E. Recommended Competition Spares
 
 | ID | Spare | Qty | Total | Supplier |
 |---|---|---:|---:|---|
@@ -98,15 +121,13 @@ The procurement list covers the components, raw materials, fastening hardware, e
 
 | Category | Total |
 |---|---:|
-| Core components | R7,380.10 |
-| Chassis, armour and weapon materials | R2,800.00 |
-| Hammer and torso mechanism components | R2,069.30 |
-| **Complete robot procurement total** | **R12,249.40** |
+| Core electrical, drive and control components | R7,380.10 |
+| Chassis, armour, spinner and structural hardware | R3,350.00 |
+| Hammer and upper-body/torso mechanism components | R2,519.30 |
+| **Complete robot procurement total** | **R13,249.40** |
 | Recommended competition spares | R568.54 |
-| **Complete robot + recommended spares** | **R12,817.94** |
+| **Complete robot + recommended spares** | **R13,817.94** |
 
-**Excluded from the procurement total:** delivery charges and any supplier price changes.
+Delivery charges and supplier price changes are excluded.
 
-**Provided by TUT laboratory:** cutting, drilling, machining/mechanical work and available workshop tools.
-
-Before ordering, confirm stock, final supplier pricing and suitable equivalents for unavailable items.
+All physical component selections must remain within the confirmed **5.0 kg maximum fully assembled competition mass**.
