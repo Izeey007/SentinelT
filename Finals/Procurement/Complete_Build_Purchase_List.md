@@ -4,7 +4,7 @@
 **Category:** Robo Wars - Remote Control Combat Robot  
 **Maximum competition mass:** **5.0 kg fully assembled**
 
-This document lists the components, raw materials, fastening hardware, electrical hardware and consumables required for the complete physical SentinelT build. Fabrication equipment and workshop tools are excluded from the procurement list.
+This document lists the components, raw materials, fastening hardware, electrical hardware and consumables required for the complete physical SentinelT build. Fabrication equipment and workshop tools are excluded from the procurement list. The build target is 4.50-4.60 kg fully assembled, leaving a 0.40-0.50 kg margin below the confirmed 5.0 kg maximum.
 
 ## Included physical systems
 
@@ -33,8 +33,8 @@ The procurement list contains **one powered spinner/cutter assembly**. The point
 | ID | Component | Qty | Total | Supplier |
 |---|---|---:|---:|---|
 | A01 | 12V 160RPM 37mm spur gearmotor | 4 | R731.40 | [Micro Robotics](https://www.robotics.org.za/GB37-500-160-12V) |
-| A02 | 37mm gearmotor mount | 4 | R179.40 | [Micro Robotics](https://www.robotics.org.za/LIY-BRA37) |
-| A03 | 125mm all-terrain wheel set or suitable equivalent | 2 packs | R478.00 | [Communica](https://www.communica.co.za/products/bmt-wheels-x2-all-terrain-chrome) |
+| A02 | Lightweight 37mm aluminium motor mounts - fabricate from B03 stock; target <=20 g each | 4 | Included | [See B03](https://www.metalcentre.co.za/) |
+| A03 | 100mm x 24mm scooter/skate wheel, 130 g each; use fabricated 6mm aluminium hub adapters, target <=15 g each | 4 | R437.00 | [Micro Robotics](https://www.robotics.org.za/3278) |
 | A04 | BTS7960 H-bridge motor driver | 3 | R307.05 | [Micro Robotics](https://www.robotics.org.za/BTS7960) |
 | A05 | 3S 11.1V 5000mAh LiPo battery, XT60 | 1 | R950.00 | [Scale RC](https://scalerc.co.za/products/beat-lipo-5000mah-11-1v-3s-100c-lipo-battery-xt60-connector) |
 | A06 | FlySky FS-i6X transmitter + iA6B receiver | 1 | R1,600.00 | [Scale RC](https://scalerc.co.za/products/flysky-fs-i6x-transmitter-with-ia6b-receiver) |
@@ -64,7 +64,7 @@ The procurement list contains **one powered spinner/cutter assembly**. The point
 | A30 | Battery strap 20x200mm, 2 pack | 1 | R30.00 | [Smitties Hobbies](https://www.smittieshobbies.com/li-po-and-li-fe-batteries) |
 | A31 | LiPo fire-resistant charging/storage bag | 1 | R250.00 | [Amazon South Africa](https://www.amazon.co.za/s?k=lipo+safe+bag) |
 
-**Core component subtotal: R7,380.10**
+**Core component subtotal: R7,159.70**
 
 ### B. Chassis, Armour, Spinner and Structural Hardware
 
@@ -72,7 +72,7 @@ The procurement list contains **one powered spinner/cutter assembly**. The point
 |---|---|---:|---:|---|
 | B01 | 6mm HDPE armour panels/offcuts | 1 set | R500.00 | [Plastic World](https://plasticworld.co.za/shop/hdpe-sheet-6mm/) |
 | B02 | Approx. 2mm aluminium chassis plate/offcut | 1 set | R500.00 | [Metal Centre](https://www.metalcentre.co.za/) |
-| B03 | Aluminium angle/flat stiffeners | 1 lot | R200.00 | [Metal Centre](https://www.metalcentre.co.za/) |
+| B03 | Aluminium angle/flat stock for chassis stiffeners, lightweight motor mounts and 6mm wheel hubs | 1 lot | R350.00 | [Metal Centre](https://www.metalcentre.co.za/) |
 | B04 | Steel material for pointed front impact part | 1 | R250.00 | [All Steel Services](https://allsteel.co.za/) |
 | B05 | Steel blank for powered spinner/cutter | 1 | R300.00 | [Tubecon Laser](https://www.tubeconlaser.co.za/Products/Hardox) |
 | B06 | 5mm steel spinner/cutter shaft stock | 1 | R100.00 | [All Steel Services](https://allsteel.co.za/) |
@@ -86,13 +86,13 @@ The procurement list contains **one powered spinner/cutter assembly**. The point
 | B14 | Battery/electronics padding and insulation | 1 lot | R100.00 | [Amazon South Africa](https://www.amazon.co.za/s?k=closed+cell+foam+sheet) |
 | B15 | Mechanical transport lock / weapon-retention hardware | 1 set | R150.00 | [Amazon South Africa](https://www.amazon.co.za/s?k=locking+pin+quick+release) |
 
-**Chassis, armour and structural hardware subtotal: R3,350.00**
+**Chassis, armour and structural hardware subtotal: R3,500.00**
 
 ### C. Hammer and Upper-Body/Torso Mechanism Components
 
 | ID | Component | Qty | Total | Supplier |
 |---|---|---:|---:|---|
-| C01 | Waveshare ST3215 serial-bus servo 30kg.cm | 3 | R1,618.05 | [Micro Robotics](https://www.robotics.org.za/W22414) |
+| C01 | Waveshare ST3215 serial-bus servo - 30 kgf.cm rated torque, 70 g each | 3 | R1,618.05 | [Micro Robotics](https://www.robotics.org.za/W22414) |
 | C02 | Waveshare ST/SC serial-bus servo driver | 1 | R102.35 | [Micro Robotics](https://www.robotics.org.za/W25514) |
 | C03 | Servo/signal wire AWG26, 5m | 1 | R66.70 | [Micro Robotics](https://www.robotics.org.za/cables/SERVO-3P-26AWG) |
 | C04 | Servo connector kit, 20 pack | 1 | R32.20 | [Micro Robotics](https://www.robotics.org.za/SERVO-M-20) |
@@ -109,7 +109,7 @@ SentinelT will use a **bolted modular construction** so damaged panels and mecha
 - Main chassis and structural armour joints: **M5/M6 through-bolts, large washers and nyloc nuts**
 - HDPE armour panels: **M5 through-bolts with washers and nyloc nuts**
 - Removable top/service panels: **M4 machine screws into rivnuts or captive threaded inserts**
-- Motor, hammer and spinner/cutter brackets: **M5/M6 high-tensile bolts with locking hardware**
+- Motor mounts: lightweight aluminium fabricated from B03 stock; hammer and spinner/cutter brackets: **M5/M6 high-tensile bolts with locking hardware**
 - Permanent welding is **not the primary assembly method**; it is reserved only for a specific metal subassembly if required by the final fabricated geometry.
 
 ## PRIORITY 2 - Recommended Competition Spares
@@ -118,22 +118,22 @@ SentinelT will use a **bolted modular construction** so damaged panels and mecha
 |---|---|---:|---:|---|
 | S01 | Spare 12V 160RPM gearmotor | 1 | R182.85 | [Micro Robotics](https://www.robotics.org.za/GB37-500-160-12V) |
 | S02 | Spare BTS7960 motor driver | 1 | R102.35 | [Micro Robotics](https://www.robotics.org.za/BTS7960) |
-| S03 | Spare wheel pack/equivalent | 1 | R239.00 | [Communica](https://www.communica.co.za/products/bmt-wheels-x2-all-terrain-chrome) |
+| S03 | Spare 100mm x 24mm wheel | 1 | R109.25 | [Micro Robotics](https://www.robotics.org.za/3278) |
 | S04 | Extra XT60 connector pair | 1 | R34.50 | [Communica](https://www.communica.co.za/products/rc-xt60-connector-pair) |
 | S05 | Extra 30A blade fuses | 3 | R9.84 | [Communica](https://www.communica.co.za/products/30a-blade-fuse) |
 
-**Recommended spares subtotal: R568.54**
+**Recommended spares subtotal: R438.79**
 
 ## Budget Summary
 
 | Category | Total |
 |---|---:|
-| Priority 1 - Core electrical, drive and control components | R7,380.10 |
-| Priority 1 - Chassis, armour, spinner and structural hardware | R3,350.00 |
+| Priority 1 - Core electrical, drive and control components | R7,159.70 |
+| Priority 1 - Chassis, armour, spinner and structural hardware | R3,500.00 |
 | Priority 1 - Hammer and upper-body/torso mechanism components | R2,519.30 |
-| **Priority 1 - Complete robot procurement** | **R13,249.40** |
-| Priority 2 - Recommended competition spares | R568.54 |
-| **Total including recommended spares** | **R13,817.94** |
+| **Priority 1 - Complete robot procurement** | **R13,179.00** |
+| Priority 2 - Recommended competition spares | R438.79 |
+| **Total including recommended spares** | **R13,617.79** |
 
 Delivery charges and supplier price changes are excluded.
 
