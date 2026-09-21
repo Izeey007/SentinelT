@@ -1,6 +1,5 @@
 # SentinelT Robo Wars - Complete Procurement List
 
-**Entrant:** TG Assegaai  
 **Project:** SentinelT  
 **Category:** Robo Wars - Remote Control Combat Robot  
 **Maximum competition mass:** **5.0 kg fully assembled**
