@@ -64,10 +64,10 @@ Please review and quote both the purchased components and the fabrication work n
 
 The preferred request to Kyle is now the reduced list in [`Component_Request_Lean.md`](Component_Request_Lean.md). It keeps the core drive, RC, safety, battery/charging and rear-cutter systems while deferring the hammer/torso servo package and avoiding full-sheet/full-bar purchases before the lab cut list exists.
 
-- Reduced online component subtotal: **R6,257.41**
+- Reduced online component subtotal: **R6,256.41**
 - Desired TUT material/fabrication allowance: **R1,000-R1,500**, only if suitable lab stock/offcuts and workshop access are available
 - **Target complete build request: approximately R7,300-R7,800**
-- Optional budget-radio fallback could lower the online subtotal to about **R5,263.41**, but only after satisfactory range/failsafe/reliability testing
+- Optional budget-radio fallback could lower the online subtotal to about **R5,262.41**, but only after satisfactory range/failsafe/reliability testing
 
 The earlier R19,460.84 planning figure is retained below only as a historical full-scope estimate. It is **not** the recommended amount to request from Kyle.
 
