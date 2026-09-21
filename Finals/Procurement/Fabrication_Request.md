@@ -60,7 +60,18 @@ Please review and quote both the purchased components and the fabrication work n
 | Front and rear features | Real-steel rear cutter and pointed steel front part | Agree configuration, permitted materials/mechanisms, supports, guarding and transport locks before issuing a cut list |
 | Assembly and testing | Fasteners, insulation, strain relief, charging containment and consumables | Assembly, measured complete mass and envelope, staged testing and recorded results |
 
-## Complete provisional completion allowance
+## Budget-reduced finals route
+
+The preferred request to Kyle is now the reduced list in [`Component_Request_Lean.md`](Component_Request_Lean.md). It keeps the core drive, RC, safety, battery/charging and rear-cutter systems while deferring the hammer/torso servo package and avoiding full-sheet/full-bar purchases before the lab cut list exists.
+
+- Reduced online component subtotal: **R6,257.41**
+- Desired TUT material/fabrication allowance: **R1,000-R1,500**, only if suitable lab stock/offcuts and workshop access are available
+- **Target complete build request: approximately R7,300-R7,800**
+- Optional budget-radio fallback could lower the online subtotal to about **R5,263.41**, but only after satisfactory range/failsafe/reliability testing
+
+The earlier R19,460.84 planning figure is retained below only as a historical full-scope estimate. It is **not** the recommended amount to request from Kyle.
+
+## Historical full-scope provisional completion allowance
 
 The **R11,370.84** in `Component_Request.md` remains the currently priced component subtotal. The following amounts are **engineering planning allowances only** so the request has a realistic complete-build budget before formal supplier/lab quotations arrive.
 
