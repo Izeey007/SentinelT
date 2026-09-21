@@ -1,3 +1,5 @@
+> **Budget update — 21 September 2026:** For the request to Kyle, use [Component_Request_Lean.md](Component_Request_Lean.md). Its preferred online subtotal is **R6,257.41**, with the TUT material/fabrication quote kept separate. This detailed file remains as the wider procurement baseline and alternatives record.
+
 # SentinelT finals component request
 
 **Solo entrant: TG Assegaai. Nothing owned or purchased, as confirmed by the participant. Final: 17 October 2026. Priced subtotal: R11,370.84; excludes unquoted completion items and delivery.**
