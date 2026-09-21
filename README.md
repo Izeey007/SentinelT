@@ -1,3 +1,5 @@
+> **Finals working branch:** SentinelT qualified for the Final Arena on 17 October 2026. Start with the [finals preparation hub](Finals/README.md). The judged elimination package is preserved at the [frozen commit](https://github.com/Izeey007/SentinelT/tree/626f0a95b85fa6701ac65f1ba5dfb4de5354e962). The following is the original elimination README.
+
 # SentinelT - Robo Wars RC Combat Robot
 
 **Project Developer:** TG Assegaai  

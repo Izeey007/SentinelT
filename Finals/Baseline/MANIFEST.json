@@ -1,0 +1,241 @@
+{
+  "confirmed_by_user": "Exact judged elimination submission",
+  "archive": "SentinelT-main(1).zip",
+  "archive_sha256": "00d2d47898e9471876f7f3348fcf99f70dffb062452a6612165be974b38abb13",
+  "files": [
+    {
+      "path": "A_Source_Code/Firmware/SentinelT_RoboWars_Control_Skeleton.ino",
+      "bytes": 3545,
+      "sha256": "ad4e1ffa88602f708573311a42773b81d878ebaf565238a708786ef3e4022f28",
+      "git_blob_sha1": "e128130d7e9a39db8d0dd7402a7b50bb569f65c1"
+    },
+    {
+      "path": "A_Source_Code/Flowcharts/SentinelT_Control_Flow.png",
+      "bytes": 145977,
+      "sha256": "5642b714f54a9aa9b3c8854bb04eb856d00ecf4a66f24821b6a3444a6810746e",
+      "git_blob_sha1": "bafbf73c6530586acff15c1f8009b0bacba2183c"
+    },
+    {
+      "path": "A_Source_Code/Flowcharts/SentinelT_Control_Flow.svg",
+      "bytes": 4412,
+      "sha256": "e335f46dcd013029469f5035557d4e0d0b31dfafab78d3ab9adc8cbe10fe9e30",
+      "git_blob_sha1": "6104052f083b963ccad7803556b158b43f59cbd8"
+    },
+    {
+      "path": "A_Source_Code/README.md",
+      "bytes": 4508,
+      "sha256": "2ebdf7928ba8038268c912cbac7efef84861b1e1adaecff30eaaf458e8040b8a",
+      "git_blob_sha1": "19b35051b32b92be9b77393ebc41f42aa2b5a487"
+    },
+    {
+      "path": "B_Designs/Electronic_Design/Electronic_Design.pdf",
+      "bytes": 348899,
+      "sha256": "685bc844aba4224a157d2e325e24b2a0a366a3830745bb1218a1bf13392a6dfa",
+      "git_blob_sha1": "f1801bc2af371d96025e3b3738967913edf73588"
+    },
+    {
+      "path": "B_Designs/Electronic_Design/Pictures/SentinelT_EStop_Integration.png",
+      "bytes": 80199,
+      "sha256": "4ca51ef88a149a8bb281446b79d657ac2bf458fff835600b66859a11645b4de1",
+      "git_blob_sha1": "91811efb73f6b7754fe9e332fc41ee7b3079ff10"
+    },
+    {
+      "path": "B_Designs/Electronic_Design/Pictures/SentinelT_EStop_Integration.svg",
+      "bytes": 2517,
+      "sha256": "64b24f3d6ff4aa8723b6dca48e08070defa65bf960573b2d2790155e51f09218",
+      "git_blob_sha1": "37f315d04951b63fead99671197ccb5df291d621"
+    },
+    {
+      "path": "B_Designs/Electronic_Design/Pictures/SentinelT_Exploded_Layout.png",
+      "bytes": 105605,
+      "sha256": "6d332bfade0bf8502ad70d400e90606a8b5b228347d87ccb5980139e59ac28d3",
+      "git_blob_sha1": "e3a1ac6db3794ebfee28f6c502eedbb0285a751a"
+    },
+    {
+      "path": "B_Designs/Electronic_Design/Pictures/SentinelT_Exploded_Layout.svg",
+      "bytes": 3139,
+      "sha256": "e6ac0db7c933584249badf4b52e6acf8b18df9777bbf149419ee8f6f1f8feb9b",
+      "git_blob_sha1": "978593b888eaf384695feb5f00075394032200c5"
+    },
+    {
+      "path": "B_Designs/Electronic_Design/Pictures/SentinelT_Internal_Layout.png",
+      "bytes": 116452,
+      "sha256": "42e97fc36192c788f57a340abb0aea81a103f037428b686b03206cd5de582ef7",
+      "git_blob_sha1": "d853305070ab723281f49f13392d10915d9e52cf"
+    },
+    {
+      "path": "B_Designs/Electronic_Design/Pictures/SentinelT_Internal_Layout.svg",
+      "bytes": 3243,
+      "sha256": "d903c0498c93c53be3b59b15a09cc29a8b851ab160926f2477c94b524059ba2e",
+      "git_blob_sha1": "348ce0a6eb1f6128c74c5661384e9aecb5dd768a"
+    },
+    {
+      "path": "B_Designs/Electronic_Design/Pictures/SentinelT_Power_Architecture.png",
+      "bytes": 126908,
+      "sha256": "5b915fcecc3e46b398b201d95ae268e015a15d6253b0e310c55727c8919923f4",
+      "git_blob_sha1": "9289eb28823a48a6d276458fc53cc03ce1580e09"
+    },
+    {
+      "path": "B_Designs/Mechanical_Design/CAD/README.md",
+      "bytes": 5940,
+      "sha256": "bc81b5d4b60330f48e550c3d4f463e3432e9663935ab1cb5ca21eea144478bc3",
+      "git_blob_sha1": "00134baedef8ad7769f14ee82e046cbfd11cfad9"
+    },
+    {
+      "path": "B_Designs/Mechanical_Design/CAD/SentinelT_Rob.blend",
+      "bytes": 1891216,
+      "sha256": "a80815977da49adb1b54dd4efe6336564c31c690c423db06439474b7062ad488",
+      "git_blob_sha1": "284d3b3a4642076fb1597ae35622b01d2cd0f417"
+    },
+    {
+      "path": "B_Designs/Mechanical_Design/Renders/01_SentinelT_FRONT.png",
+      "bytes": 1578871,
+      "sha256": "614d23b3d5db85473c46350a522050d7ba6bb3a21aa5929a98ae821062f1255c",
+      "git_blob_sha1": "50a18a05b4a98b2e46f63653eb7ef84f18bb5988"
+    },
+    {
+      "path": "B_Designs/Mechanical_Design/Renders/02_SentinelT_SIDE.png",
+      "bytes": 1266704,
+      "sha256": "5fdc0f62057c7e386ce05be8390edc3d4798af0e477fcf3a0b84c237e6991d8c",
+      "git_blob_sha1": "d93cffc4c5c6fa133397948a132587c32c316c06"
+    },
+    {
+      "path": "B_Designs/Mechanical_Design/Renders/03_SentinelT_TOP.png",
+      "bytes": 1507603,
+      "sha256": "9ebf72b1ff90edde5f885fe1fc7b6484d0e65a9663603e0b795044f4a76c9646",
+      "git_blob_sha1": "f3e0e186a04517264c11f1e5356ac1f78f346c01"
+    },
+    {
+      "path": "B_Designs/Mechanical_Design/Renders/04_SentinelT_ISOMETRIC.png",
+      "bytes": 1340808,
+      "sha256": "6701d602571f82e40050ab73e099e736d739ad8e2a36ad7a586996780819f400",
+      "git_blob_sha1": "b532da07abfd450627b17d2eb323e38234d34227"
+    },
+    {
+      "path": "B_Designs/Mechanical_Design/Renders/3D_PHYSICAL_SENTINELTPM.png",
+      "bytes": 2139220,
+      "sha256": "b070034e5a7a2137964896b9ed6b316e84abdf76be617af9c70b7fbdd6e736cc",
+      "git_blob_sha1": "84e19e34cd8342c30eec99d91f531d52ef5a8ff0"
+    },
+    {
+      "path": "B_Designs/Mechanical_Design/Renders/SentinelT_Remote.png",
+      "bytes": 331917,
+      "sha256": "52c664a7f928c01f11013e79a226eb492023b06e688ae48fcaea82050091512c",
+      "git_blob_sha1": "8be1e11815a30d51c89f446dafbae0168a877896"
+    },
+    {
+      "path": "B_Designs/Mechanical_Design/Renders/SentinelT_Remote.svg",
+      "bytes": 1831,
+      "sha256": "4ee99ef756736bb493ec2ec046f35b118520a95edab4068b2b59c68a0a7778a8",
+      "git_blob_sha1": "369b4717c0363f106288f9bbe3dbe36f6966ab3f"
+    },
+    {
+      "path": "B_Designs/README.md",
+      "bytes": 5929,
+      "sha256": "e542e06ae557041ef1068a02118e6ce9ff8f4cdf6d997935962f7d33a6878c2b",
+      "git_blob_sha1": "e0d1ad7d5aa46088f78fd318c46a5ed8e101c4f7"
+    },
+    {
+      "path": "B_Designs/Schematics/SentinelT_Power_Architecture.svg",
+      "bytes": 5972,
+      "sha256": "e02182774b377913090b090155bfc27ed0a5160dc2eeb8e050d624c7cf01296e",
+      "git_blob_sha1": "84dea68e8c4d0d9a672a59b79506d0774b3f039f"
+    },
+    {
+      "path": "B_Designs/Schematics/SentinelT_Power_and_EStop.md",
+      "bytes": 3881,
+      "sha256": "01903ca0ed0c2d2316d7733aae4246fea22c7f180bfc5982668b63c8634f117b",
+      "git_blob_sha1": "02b815c972afa7ab6f0b4dbc716ba2c62ca6eff8"
+    },
+    {
+      "path": "B_Designs/Simulation/SentinelT_Footprint_Audit.py",
+      "bytes": 1909,
+      "sha256": "0e9e55525a98087451f065a4c9d5c355f5015ac84f6aa64583613855bafb856b",
+      "git_blob_sha1": "0f54ef89af050d67af04205d0945b4e89573c8b7"
+    },
+    {
+      "path": "B_Designs/Simulation/SentinelT_Footprint_Audit.txt",
+      "bytes": 652,
+      "sha256": "9bbde3f44f1fdd24b8b985bc0f893165ac4b2412b0af2e088e6c635122230f13",
+      "git_blob_sha1": "670848ef6cd2a0d9bfed9b6a789dedc354b2436a"
+    },
+    {
+      "path": "B_Designs/Simulation/SentinelT_Mass_Budget.py",
+      "bytes": 956,
+      "sha256": "76a8ad0c0babc05d0fa3d752516bf6f2d2ceabab95c4a120f5ab1540656546e5",
+      "git_blob_sha1": "2770757cd68d0036f3400858715257f4ff7ab538"
+    },
+    {
+      "path": "C_Documentation/BOM/FUNDING_TOTAL.txt",
+      "bytes": 622,
+      "sha256": "19571e4adc2e19468c5d03a8c3d4b49f63953c8edf13e92dac553bd37c25bf0a",
+      "git_blob_sha1": "bac3ddfd203cb5d610ad5e3af7d06bbd2a9f8f42"
+    },
+    {
+      "path": "C_Documentation/BOM/SentinelT_BOM_Procurement_Notes.md",
+      "bytes": 2764,
+      "sha256": "977925cf3bedfa85cfe0e64f44c071ba1b4bde940a5875a307d86a7b2fcddc2b",
+      "git_blob_sha1": "06888b765ca814fbf7b14414cf2ff3b8ec2d6002"
+    },
+    {
+      "path": "C_Documentation/BOM/SentinelT_Bill_of_Materials.xlsx",
+      "bytes": 10579,
+      "sha256": "b88262cc65fa64856b2d96d21833ce66477d231091a7aeda2b9b8cbea1caca31",
+      "git_blob_sha1": "dfca90b10f0f2611acd9adf7f28eb006c716d222"
+    },
+    {
+      "path": "C_Documentation/BOM/SentinelT_Bill_of_Materials_Funding.csv",
+      "bytes": 5349,
+      "sha256": "c45375bd35a1ebde2422ebd06cbaf20c1d2a3f414a820ea8d8135e411dc286a1",
+      "git_blob_sha1": "200d7b4b63a8040ccc85008d4d10cb445969666f"
+    },
+    {
+      "path": "C_Documentation/FQA_Attendance_Log.md",
+      "bytes": 691,
+      "sha256": "7c457e908b44e208d04df9cdab4802da5a911c4243bee49be6171e643f5c95c0",
+      "git_blob_sha1": "2d41c9b431fc96eb33e3172a2cfa4154d8864d66"
+    },
+    {
+      "path": "C_Documentation/FQA_Proof/.gitkeep",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "git_blob_sha1": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "C_Documentation/Holistic_Build_Document/SentinelT_Holistic_Build_Document.pdf",
+      "bytes": 4001768,
+      "sha256": "1560233a8720e292be35c30947c7bb05ee10b5a254ef0603726ca442e4bdc2c0",
+      "git_blob_sha1": "1f8c558dcc94976bc7bfb9e62f77ce29f9a44c18"
+    },
+    {
+      "path": "C_Documentation/PROJECT_COMPLETENESS_CHECKLIST.md",
+      "bytes": 6543,
+      "sha256": "1df60e2763fd37a32fe7733baa8915ad79d61ae1193db7df41006b4ed6f998e3",
+      "git_blob_sha1": "754b851764f618ac98086cd4c260b565c56da93b"
+    },
+    {
+      "path": "C_Documentation/Pitch_Deck/SentinelT_Pitch_Deck.pdf",
+      "bytes": 3647349,
+      "sha256": "3c740ebde92b53ab115276dd74f3fd9cc83640d3c18a78625b5245ee2bdcb758",
+      "git_blob_sha1": "05815d620af659a6efeaca2183f2931de9ea1208"
+    },
+    {
+      "path": "C_Documentation/Pitch_Deck/Thato_Glen_Assegaai.jpg",
+      "bytes": 7465,
+      "sha256": "b37a4e2d92a77f4cb3a083d4dc857bfc8fa68e58bfcfc08906acf9f9e3121989",
+      "git_blob_sha1": "691e1224a7d699dd5688665587fcc5e04de9ccb9"
+    },
+    {
+      "path": "C_Documentation/README.md",
+      "bytes": 4315,
+      "sha256": "e299d4277295e025c41616734bdfbc42032d3b95bc24a5ba1ac251bb40c4d87d",
+      "git_blob_sha1": "5beb6332d79284429cc05a585354cf353f17fe89"
+    },
+    {
+      "path": "README.md",
+      "bytes": 7080,
+      "sha256": "f1e7fddcb6e02fa725f641985e46092ad455c5cdc19229f90bc50b1366364264",
+      "git_blob_sha1": "ab607277de8528c1249b7a43ace81640be7b1dfc"
+    }
+  ]
+}
