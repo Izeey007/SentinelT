@@ -26,7 +26,9 @@ The procurement list contains **one powered spinner/cutter assembly**. The point
 
 **Priority 2 - Recommended Competition Spares:** Replacement parts for competition repairs. These are not required to complete the robot.
 
-## A. PRIORITY 1 - Core Electrical, Drive and Control Components
+## PRIORITY 1 - Complete Robot Build
+
+### A. Core Electrical, Drive and Control Components
 
 | ID | Component | Qty | Total | Supplier |
 |---|---|---:|---:|---|
@@ -64,7 +66,7 @@ The procurement list contains **one powered spinner/cutter assembly**. The point
 
 **Core component subtotal: R7,380.10**
 
-## B. PRIORITY 1 - Chassis, Armour, Spinner and Structural Hardware
+### B. Chassis, Armour, Spinner and Structural Hardware
 
 | ID | Material / Hardware | Qty | Total | Supplier |
 |---|---|---:|---:|---|
@@ -86,7 +88,7 @@ The procurement list contains **one powered spinner/cutter assembly**. The point
 
 **Chassis, armour and structural hardware subtotal: R3,350.00**
 
-## C. PRIORITY 1 - Hammer and Upper-Body/Torso Mechanism Components
+### C. Hammer and Upper-Body/Torso Mechanism Components
 
 | ID | Component | Qty | Total | Supplier |
 |---|---|---:|---:|---|
@@ -110,7 +112,7 @@ SentinelT will use a **bolted modular construction** so damaged panels and mecha
 - Motor, hammer and spinner/cutter brackets: **M5/M6 high-tensile bolts with locking hardware**
 - Permanent welding is **not the primary assembly method**; it is reserved only for a specific metal subassembly if required by the final fabricated geometry.
 
-## E. PRIORITY 2 - Recommended Competition Spares
+## PRIORITY 2 - Recommended Competition Spares
 
 | ID | Spare | Qty | Total | Supplier |
 |---|---|---:|---:|---|
