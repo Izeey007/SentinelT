@@ -35,7 +35,7 @@ Kyle indicated that the budget is limited, so this list removes/defer non-essent
 
 ## Reduced online subtotal
 
-**R6,257.41**
+**R6,256.41**
 
 This subtotal excludes delivery and the TUT lab's cut-to-size material/fabrication quote.
 
@@ -69,7 +69,7 @@ Target the lab material/fabrication addition at roughly **R1,000-R1,500** if sui
 
 ### Target complete funding request
 
-- Reduced online components: **R6,257.41**
+- Reduced online components: **R6,256.41**
 - Desired lab material/fabrication allowance: **R1,000-R1,500**
 - **Target complete build request: approximately R7,300-R7,800**
 
@@ -77,8 +77,8 @@ This is the preferred budget-reduced request. Do not present the earlier R19,460
 
 ## Optional cheaper radio fallback
 
-If Kyle requires a lower total, a Takealot 4-channel 2.4GHz transmitter/receiver set is currently listed around **R606** and advertises failsafe/mixing. It would save approximately **R994** versus the FlySky bundle, reducing the online subtotal to about **R5,263.41**. This fallback is **not the preferred choice** until it passes range, failsafe, channel-mixing and reliability tests.
+If Kyle requires a lower total, a Takealot 4-channel 2.4GHz transmitter/receiver set is currently listed around **R606** and advertises failsafe/mixing. It would save approximately **R994** versus the FlySky bundle, reducing the online subtotal to about **R5,262.41**. This fallback is **not the preferred choice** until it passes range, failsafe, channel-mixing and reliability tests.
 
 [Takealot budget radio candidate](https://www.takealot.com/ga-4h-tx-4ch-2-4ghz-remote-control-transmitter-wire-for-1-8-1-10/PLID100272362)
 
-Preferred approach: request the R6,257.41 list first and only use the cheaper radio if the funding cap requires it.
+Preferred approach: request the R6,256.41 list first and only use the cheaper radio if the funding cap requires it.
