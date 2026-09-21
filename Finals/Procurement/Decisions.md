@@ -30,3 +30,11 @@ The priced subtotal is **R11,370.84**, not a complete final quotation. It replac
 Communica is explicitly permitted by the participant alongside Micro Robotics, Amazon.co.za, Takealot and suitable alternatives. Amazon stock and delivery are not assumed; the located radio listing could not be verified. Takealot aggregator pricing was not treated as a confirmed direct supplier quote.
 
 The main request retains unavailable parts as clearly marked decisions where no fully validated replacement has been found. It must not be presented as an all-in-stock, immediately orderable kit.
+
+## Participant's quality and fabrication priorities
+
+The participant confirms lab access for steel work and requests a real-steel rear cutter and pointed front steel part. Front actuation is not specified. Retain the hammers for review; do not silently replace the competition concept with cosmetic parts. See [fabrication and materials request](Fabrication_Request.md).
+
+Compare lower prices first among technically suitable parts. Evaluate documented ratings, fit, material grade, installed mass, repairability, stock, delivery and seller support before price. Compare landed cost, including connectors, mounting parts, machining and shipping. Do not substitute an unverified generic controller, battery or mechanism solely because its advertised price or rating is attractive.
+
+Obtain lab-stock or small cut-to-size quotes before buying complete steel bars/sheets. A wear-resistant grade is a candidate class for workshop review, not automatic proof of impact suitability. Raw steel grade, thickness, finished part geometry and joining remain unreleased. The existing subtotal is unchanged because no material/service quote has been received.

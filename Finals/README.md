@@ -14,6 +14,7 @@ Qualification is confirmed by the participant's notice. The participant confirms
 - [Physical test record](Verification/Test_Record.md).
 - [Mass and dimensions record](Verification/Mass_and_Dimensions.md).
 - [CAD and fabrication change register](CAD_and_Fabrication.md).
+- [Materials and fabrication request for TUT](Procurement/Fabrication_Request.md).
 - [Final pitch preparation](Pitch_Preparation.md).
 
 Start with funding/stock decisions and a functional rolling chassis with verified isolation and RC failsafe. Review active mechanisms against the final rules and lab-approved design before procurement or powered testing. This sequence does not remove anything from the judged design or claim that a passive robot meets finals requirements.
