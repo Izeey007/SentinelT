@@ -1,7 +1,6 @@
 # SentinelT - List of Needed Components
 
-**Maximum competition mass:** 5.0 kg  
-**Budget limit:** R5,000
+**Maximum competition mass:** 5.0 kg fully assembled
 
 | ID | Component | Qty | Unit Price | Total | Supplier |
 |---|---|---:|---:|---:|---|
@@ -10,10 +9,12 @@
 | K03 | Gens Ace 3S 11.1V 2200mAh 35C LiPo battery | 1 | R480.00 | R480.00 | [Playzone Interactive](https://www.playzoneinteractive.co.za/products/gens-ace-bashing-2200mah-11-1v-35c-deans-softpack-lipo-battery-online-only) |
 | K04 | FlySky FS-i6X 6-channel radio set with receiver | 1 | R1,550.00 | R1,550.00 | [Revo Hobbies](https://revo.cistech.co.za/ShowCategory.aspx?Category=1-21) |
 | K05 | 12V 4100RPM 775 brushed DC spinner/cutter motor | 1 | R331.35 | R331.35 | [Mantech](https://www.mantech.co.za/ProductInfo.aspx?Item=ME101116) |
-| K06 | DS3240-270-FB 40kg.cm metal-gear servo | 3 | R273.70 | R821.10 | [Micro Robotics](https://www.robotics.org.za/DS3240-270-FB) |
+| K06 | DS3240-270-FB 40 kgf.cm metal-gear servo | 3 | R273.70 | R821.10 | [Micro Robotics](https://www.robotics.org.za/DS3240-270-FB) |
 | K07 | Rotary-release emergency stop, NO/NC | 1 | R322.00 | R322.00 | [Communica](https://www.communica.co.za/products/pbme25trp-l12-65) |
 | K08 | 12V 100A battery isolator switch | 1 | R120.70 | R120.70 | [AutoMarine](https://www.automarine.co.za/battery-isolator-switches/5545-battery-isolator-switch-12-volt-100-amp.html) |
+| K09 | Raspberry Pi Pico W main control board | 1 | R163.30 | R163.30 | [Communica](https://www.communica.co.za/products/raspberry-pi-pico-w) |
+| K10 | 70 x 90mm double-sided protoboard, 4 pack | 1 | R27.60 | R27.60 | [Micro Robotics](https://www.robotics.org.za/DS-7090-254) |
 
 ## Total
 
-**R4,793.55**
+**R4,984.45**
